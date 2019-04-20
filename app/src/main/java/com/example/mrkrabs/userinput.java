@@ -1,6 +1,7 @@
 package com.example.mrkrabs;
 
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -19,4 +20,8 @@ public class userinput extends Activity {
     //declaring enter button that is to be pressed after all user inputs
     private Button EnterButton;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 }
