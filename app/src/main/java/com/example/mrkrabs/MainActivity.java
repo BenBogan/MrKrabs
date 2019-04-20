@@ -11,16 +11,16 @@ import android.view.View.OnClickListener;
 public class MainActivity extends Activity {
 
 
-    private Button enterbutton;
+    private Button welcomebutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        enterbutton = (Button) findViewById(R.id.enter);
+        welcomebutton = findViewById(R.id.WelcomeButton);
 
-        enterbutton.setOnClickListener(this);
+        welcomebutton.setOnClickListener(this);
     }
 
     public void onClick(View a){
