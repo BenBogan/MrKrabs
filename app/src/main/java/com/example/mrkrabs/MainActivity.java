@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener{
 
 
     private Button welcomebutton;
@@ -29,5 +29,6 @@ public class MainActivity extends Activity {
 
     private void gotosecondscreen(){
         Intent shift = new Intent(MainActivity.this, userinput.class);
+        startActivity(shift);
     }
 }
