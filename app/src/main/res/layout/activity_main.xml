@@ -20,6 +20,7 @@
         android:id="@+id/WelcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
         android:layout_centerHorizontal="true"
         android:text="@string/WelcomeText"
         android:textSize="20sp" />
