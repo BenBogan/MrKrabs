@@ -8,27 +8,27 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity implements OnClickListener{
+public class Results1 extends Activity implements OnClickListener{
 
 
-    private Button welcomebutton;
+    private Button Results1Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.results1);
 
-        welcomebutton = findViewById(R.id.WelcomeButton);
+        Results1Button = findViewById(R.id.Results1Button);
 
-        welcomebutton.setOnClickListener(this);
+        Results1Button.setOnClickListener(this);
     }
 
     public void onClick(View a){
-        GoToGeneral();
+        GoToResults1();
     }
 
-    private void GoToGeneral(){
-        Intent shift = new Intent(MainActivity.this, GeneralInput.class);
+    private void GoToResults1(){
+        Intent shift = new Intent(Results1.this, MainActivity.class);
         startActivity(shift);
     }
 }

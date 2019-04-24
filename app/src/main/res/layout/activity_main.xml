@@ -4,42 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp" >
+    android:padding="10dp"
+    android:background="#bdffbd" >
     <!--tools:context=".MainActivity">-->
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:elevation="4dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
 
-    <TextView
-        android:id="@+id/WelcomeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/my_toolbar"
+    <Button
+        android:id="@+id/WelcomeHeader"
+        android:layout_width="3000dp"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/WelcomeText"
-        android:textSize="20sp" />
-
+        android:text="@string/WelcomeHeader"
+        android:textSize="21dp"
+        android:background="#50a050"
+        android:fontFamily="serif"
+        />
 
     <Button
         android:id="@+id/WelcomeButton"
         android:layout_width="300dp"
         android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/WelcomeButton"
-        android:layout_alignParentBottom="true"/>
+        android:background="#f0f070"
+        android:textSize="21dp"/>
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:id="@+id/KrabsGif"
         android:layout_width="380dp"
         android:layout_height="300dp"
-        android:background="@drawable/krabs_money"
-        />
+        android:layout_below="@id/WelcomeHeader"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/krabs_money" />
+
+    <Button
+        android:id="@+id/WelcomeText"
+        android:layout_width="3000dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/KrabsGif"
+        android:layout_above="@id/WelcomeButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#80e080"
+        android:text="@string/WelcomeText"
+        android:textSize="18dp"
+        android:typeface="normal"
+        android:textAllCaps="true"/>
 
 </RelativeLayout>
