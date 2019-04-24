@@ -7,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class userinput extends Activity {
+public class GeneralInput extends Activity {
 
     //declaring all private text boxes as user inputs
     private EditText Grocery;

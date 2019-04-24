@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Mr.Krabs</string>
-    <string name="WelcomeButton">Begin! </string>
-    <string name="WelcomeText">MoneyMoneyMoneyMoneyMoney </string>
+    <string name="WelcomeButton">Begin Saving! </string>
+    <string name="WelcomeHeader">MoneyMoneyMoneyMoneyMoney </string>
+    <string name="WelcomeText">Welcome to Mr.Krabs\' Saving App! \n \n Learn to Budget after moving!  </string>
 </resources>

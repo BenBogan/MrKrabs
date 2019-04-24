@@ -24,11 +24,11 @@ public class MainActivity extends Activity implements OnClickListener{
     }
 
     public void onClick(View a){
-        gotosecondscreen();
+        GoToGeneral();
     }
 
-    private void gotosecondscreen(){
-        Intent shift = new Intent(MainActivity.this, userinput.class);
+    private void GoToGeneral(){
+        Intent shift = new Intent(MainActivity.this, GeneralInput.class);
         startActivity(shift);
     }
 }
