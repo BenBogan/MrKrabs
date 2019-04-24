@@ -24,10 +24,10 @@ public class EntertainmentInput extends Activity implements OnClickListener{
     }
 
     public void onClick(View a){
-        GoToEntertainment();
+        GoToResults();
     }
 
-    private void GoToEntertainment(){
+    private void GoToResults(){
         Intent shift = new Intent(EntertainmentInput.this, Results1.class);
         startActivity(shift);
     }
