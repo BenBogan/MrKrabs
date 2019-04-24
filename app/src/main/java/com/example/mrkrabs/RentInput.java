@@ -8,19 +8,19 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class GeneralInput extends Activity implements OnClickListener{
+public class RentInput extends Activity implements OnClickListener{
 
 
-    private Button GeneralButton;
+    private Button RentButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.general_input);
+        setContentView(R.layout.rent_input);
 
-        GeneralButton = findViewById(R.id.GeneralButton);
+        RentButton = findViewById(R.id.RentButton);
 
-        GeneralButton.setOnClickListener(this);
+        RentButton.setOnClickListener(this);
     }
 
     public void onClick(View a){
@@ -28,7 +28,7 @@ public class GeneralInput extends Activity implements OnClickListener{
     }
 
     private void GoToRent(){
-        Intent shift = new Intent(GeneralInput.this, RentInput.class);
+        Intent shift = new Intent(RentInput.this, EssentialsInput.class);
         startActivity(shift);
     }
 }

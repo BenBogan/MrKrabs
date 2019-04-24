@@ -2,5 +2,15 @@
     <string name="app_name">Mr.Krabs</string>
     <string name="WelcomeButton">Begin Saving! </string>
     <string name="WelcomeHeader">MoneyMoneyMoneyMoneyMoney </string>
-    <string name="WelcomeText">Welcome to Mr.Krabs\' Saving App! \n \n Learn to Budget after moving!  </string>
+    <string name="WelcomeText">Welcome to Mr.Krabs\' Saving App! \n \n Learn to Budget after moving!</string>
+    <string name="Next">Next</string>
+    <string name="GeneralText1">General</string>
+    <string name="GeneralText2">Current City:</string>
+    <string name="RentText1">Housing Costs</string>
+    <string name="RentText2">Rent per Month</string>
+    <string name="EssentialsText1">Price of Essentials</string>
+    <string name="EssentialsText2">Groceries per Month</string>
+    <string name="EntertainmentText1">Entertainment</string>
+    <string name="EntertainmentText2">Dining Out Costs</string>
+    <string name="Results1Text1">Results</string>
 </resources>

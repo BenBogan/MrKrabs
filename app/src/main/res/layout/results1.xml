@@ -8,37 +8,16 @@
     android:background="#bdffbd" >
 
     <TextView
-        android:id="@+id/GeneralText1"
+        android:id="@+id/Results1Text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/GeneralText1"
-        android:background="#f0f070"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/GeneralText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/GeneralText1"
-        android:text="@string/GeneralText2"
-        android:layout_marginTop="10dp"
+        android:text="@string/EssentialsText1"
         android:background="#f0f070"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/GeneralInput1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/GeneralText2"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:ems="10"
-        android:inputType="numberDecimal" />
-
     <Button
-        android:id="@+id/GeneralButton"
+        android:id="@+id/Results1Button"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
