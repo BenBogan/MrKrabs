@@ -5,7 +5,7 @@ import android.app.Application;
 public class GlobalClass extends Application {
     private String CurrentCity;
     private String DestinationCity;
-    private Integer Salary;
+    private String ExpectedSalary;
 
     public String getCurrentCity() {
         return CurrentCity;
@@ -16,18 +16,25 @@ public class GlobalClass extends Application {
     }
 
     public String getDestinationCity() {
+
         return DestinationCity;
+
     }
 
     public void setDestinationCity(String destinationCity) {
         this.DestinationCity = destinationCity;
     }
 
-    public Integer getSalary() {
-        return Salary;
+    public String getExpectedSalary() {
+
+        return ExpectedSalary;
+
     }
 
-    public void setSalary(Integer salary) {
-        this.Salary = salary;
+    public void setExpectedSalary(String expectedSalary) {
+
+        this.ExpectedSalary = expectedSalary;
+
     }
 }
+

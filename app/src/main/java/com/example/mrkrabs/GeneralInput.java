@@ -38,6 +38,8 @@ public class GeneralInput extends Activity implements OnClickListener{
         CitiesList2 = findViewById(R.id.cities_list2);
         CitiesList2.setAdapter(CitiesAdapter2);
 
+        ExpectedSalary=findViewById(R.id.ExpectedSalary);
+
         GeneralButton = findViewById(R.id.GeneralButton);
 
         GeneralButton.setOnClickListener(this);
@@ -47,12 +49,14 @@ public class GeneralInput extends Activity implements OnClickListener{
     public void onClick(View a){
         String City1 = CitiesList1.getText().toString();
         String City2 = CitiesList2.getText().toString();
+        String Salary= ExpectedSalary.getText().toString();
 
 
         GlobalClass GlobalGeneral= (GlobalClass) getApplicationContext();
 
         GlobalGeneral.setCurrentCity(City1);
         GlobalGeneral.setDestinationCity(City2);
+        GlobalGeneral.setExpectedSalary(Salary);
         GoToRent();
     }
 
