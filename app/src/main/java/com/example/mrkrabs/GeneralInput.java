@@ -17,9 +17,6 @@ public class GeneralInput extends Activity implements OnClickListener{
 
 
     private Button GeneralButton;
-    private EditText CurrentCity;
-    private EditText NewCity;
-    private EditText ExpectedSalary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

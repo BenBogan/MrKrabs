@@ -27,11 +27,58 @@
         android:background="#f0f070"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/RentInput1"
+    <AutoCompleteTextView
+        android:id="@+id/Bedrooms"
+        android:layout_below="@+id/RentText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:completionThreshold="1"
+        android:hint="@string/BedroomsHint"
+        android:completionHint="Number of Bedrooms"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/RentText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/RentText2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Bedrooms"
+        android:text="@string/RentText3"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/Location"
+        android:layout_below="@+id/RentText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:completionThreshold="1"
+        android:hint="@string/InOutHint"
+        android:completionHint="Number of Bedrooms"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/RentText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Location"
+        android:text="@string/RentText4"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/RentInput"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RentText4"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
