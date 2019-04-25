@@ -23,6 +23,7 @@ public class GeneralInput extends Activity implements OnClickListener{
         GeneralButton.setOnClickListener(this);
     }
 
+
     public void onClick(View a){
         GoToRent();
     }
