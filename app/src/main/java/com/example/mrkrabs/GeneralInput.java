@@ -51,12 +51,9 @@ public class GeneralInput extends Activity implements OnClickListener{
         String City2 = CitiesList2.getText().toString();
         String Salary= ExpectedSalary.getText().toString();
 
-
-        GlobalClass GlobalGeneral= (GlobalClass) getApplicationContext();
-
-        GlobalGeneral.setCurrentCity(City1);
-        GlobalGeneral.setDestinationCity(City2);
-        GlobalGeneral.setExpectedSalary(Salary);
+        ((GlobalClass) this.getApplication()).setCurrentCity(City1);
+        ((GlobalClass) this.getApplication()).setDestinationCity(City2);
+        ((GlobalClass) this.getApplication()).setExpectedSalary(Salary);
         GoToRent();
     }
 

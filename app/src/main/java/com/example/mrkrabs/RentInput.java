@@ -15,7 +15,8 @@ import android.widget.TextView;
 
 public class RentInput extends Activity implements OnClickListener {
 
-    private EditText RentInput;
+    private EditText RentInput1;
+    private EditText Utilities1;
     private AutoCompleteTextView Location1;
     private AutoCompleteTextView Bedrooms1;
     private Button RentButton;
@@ -37,12 +38,24 @@ public class RentInput extends Activity implements OnClickListener {
         Bedrooms1 = findViewById(R.id.Bedrooms);
         Bedrooms1.setAdapter(bedroom);
 
+        RentInput1 = findViewById(R.id.RentInput);
+        Utilities1 = findViewById(R.id.Utilities);
+
         RentButton = findViewById(R.id.RentButton);
 
         RentButton.setOnClickListener(this);
     }
 
+
     public void onClick(View a) {
+        String Bedrooms = Bedrooms1.getText().toString();
+        String Location = Location1.getText().toString();
+        String Rent= RentInput1.getText().toString();
+        String Utilities= Utilities1.getText().toString();
+
+//        ((GlobalClass) this.getApplication()).setCurrentCity(City1);
+//        ((GlobalClass) this.getApplication()).setDestinationCity(City2);
+//        ((GlobalClass) this.getApplication()).setExpectedSalary(Salary);
         GoToEssentials();
     }
 

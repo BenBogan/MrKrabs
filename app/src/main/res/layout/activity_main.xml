@@ -37,19 +37,19 @@
         android:background="#f0f070"
         android:textSize="21dp"/>
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/KrabsGif"
-        android:layout_width="380dp"
-        android:layout_height="300dp"
-        android:layout_below="@id/WelcomeHeader"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/krabs_money" />
+    <!--<pl.droidsonroids.gif.GifImageView-->
+        <!--android:id="@+id/KrabsGif"-->
+        <!--android:layout_width="380dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_below="@id/WelcomeHeader"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:background="@drawable/krabs_money" />-->
 
     <Button
         android:id="@+id/WelcomeText"
         android:layout_width="3000dp"
         android:layout_height="150dp"
-        android:layout_below="@id/KrabsGif"
+
         android:layout_above="@id/WelcomeButton"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
@@ -59,5 +59,6 @@
         android:textSize="18dp"
         android:typeface="normal"
         android:textAllCaps="true"/>
+    <!--android:layout_below="@id/KrabsGif"-->
 
 </RelativeLayout>

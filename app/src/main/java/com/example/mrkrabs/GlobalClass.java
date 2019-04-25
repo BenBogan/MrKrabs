@@ -7,6 +7,12 @@ public class GlobalClass extends Application {
     private String DestinationCity;
     private String ExpectedSalary;
 
+    private String Bedrooms;
+    private String Location;
+    private String RentPerMonth;
+    private String Utilities;
+
+
     public String getCurrentCity() {
         return CurrentCity;
     }
