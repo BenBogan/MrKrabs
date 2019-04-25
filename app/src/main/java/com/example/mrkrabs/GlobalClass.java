@@ -16,7 +16,6 @@ public class GlobalClass extends Application {
     }
 
     public String getDestinationCity() {
-
         return DestinationCity;
 
     }
@@ -26,7 +25,6 @@ public class GlobalClass extends Application {
     }
 
     public String getExpectedSalary() {
-
         return ExpectedSalary;
 
     }
