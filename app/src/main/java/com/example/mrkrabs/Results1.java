@@ -47,18 +47,6 @@ public class Results1 extends Activity implements OnClickListener{
 
         setContentView(R.layout.results1);
 
-        ArrayAdapter<String> CitiesAdapter1 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, Cities);
-        AutoCompleteTextView CitiesList1 = (AutoCompleteTextView)
-                findViewById(R.id.cities_list1);
-        CitiesList1.setAdapter(CitiesAdapter1);
-
-        ArrayAdapter<String> CitiesAdapter2 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, Cities);
-        AutoCompleteTextView CitiesList2 = (AutoCompleteTextView)
-                findViewById(R.id.cities_list2);
-        CitiesList2.setAdapter(CitiesAdapter2);
-
         TestText1 = findViewById(R.id.JSONResults1);
         TestText2 = findViewById(R.id.JSONResults2);
         TestText3 = findViewById(R.id.JSONResults3);
