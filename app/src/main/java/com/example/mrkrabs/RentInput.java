@@ -24,10 +24,10 @@ public class RentInput extends Activity implements OnClickListener{
     }
 
     public void onClick(View a){
-        GoToRent();
+        GoToEssentials();
     }
 
-    private void GoToRent(){
+    private void GoToEssentials(){
         Intent shift = new Intent(RentInput.this, EssentialsInput.class);
         startActivity(shift);
     }

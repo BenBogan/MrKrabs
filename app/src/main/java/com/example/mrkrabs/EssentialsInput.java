@@ -24,10 +24,10 @@ public class EssentialsInput extends Activity implements OnClickListener{
     }
 
     public void onClick(View a){
-        GoToEssentials();
+        GoToEntertainment();
     }
 
-    private void GoToEssentials(){
+    private void GoToEntertainment(){
         Intent shift = new Intent(EssentialsInput.this, EntertainmentInput.class);
         startActivity(shift);
     }
