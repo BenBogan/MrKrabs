@@ -10,7 +10,6 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-
     private Button welcomebutton;
 
     @Override
