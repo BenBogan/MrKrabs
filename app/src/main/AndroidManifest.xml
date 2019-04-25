@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.mrkrabs.GeneralInput"></activity>
         <activity android:name="com.example.mrkrabs.RentInput"></activity>
         <activity android:name="com.example.mrkrabs.EssentialsInput"></activity>
         <activity android:name="com.example.mrkrabs.EntertainmentInput"></activity>

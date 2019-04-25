@@ -45,7 +45,7 @@ public class Results1 extends Activity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.general_input);
+        setContentView(R.layout.results1);
 
         ArrayAdapter<String> CitiesAdapter1 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line, Cities);
