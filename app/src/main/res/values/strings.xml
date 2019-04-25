@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Mr.Krabs</string>
     <string name="WelcomeButton">Begin Saving! </string>
@@ -13,4 +14,6 @@
     <string name="EntertainmentText1">Entertainment</string>
     <string name="EntertainmentText2">Dining Out Costs</string>
     <string name="Results1Text1">Results</string>
+
+    <string-array name="cities_list"><item>Boston</item></string-array>
 </resources>
