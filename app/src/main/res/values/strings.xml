@@ -7,6 +7,7 @@
     <string name="Next">Next</string>
     <string name="GeneralText1">General</string>
     <string name="GeneralText2">Current City:</string>
+    <string name="GeneralText3">Destination City:</string>
     <string name="RentText1">Housing Costs</string>
     <string name="RentText2">Rent per Month</string>
     <string name="EssentialsText1">Price of Essentials</string>

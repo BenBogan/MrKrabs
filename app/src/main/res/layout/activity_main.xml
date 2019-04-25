@@ -25,8 +25,7 @@
         android:text="@string/WelcomeHeader"
         android:textSize="21dp"
         android:background="#50a050"
-        android:fontFamily="serif"
-        />
+        android:fontFamily="serif" />
 
     <Button
         android:id="@+id/WelcomeButton"
