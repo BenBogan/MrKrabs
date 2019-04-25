@@ -16,13 +16,57 @@
         android:background="#f0f070"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/JSONResults1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Results1Text1"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/JSONResults2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults1"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/JSONResults3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults2"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/JSONResults4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults3"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/Results1Button"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/Next"
+        android:text="Test JSON"
         android:background="#f0f070"
         android:textSize="21dp"/>
 
