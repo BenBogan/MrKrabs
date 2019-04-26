@@ -53,9 +53,10 @@ public class RentInput extends Activity implements OnClickListener {
         String Rent= RentInput1.getText().toString();
         String Utilities= Utilities1.getText().toString();
 
-//        ((GlobalClass) this.getApplication()).setCurrentCity(City1);
-//        ((GlobalClass) this.getApplication()).setDestinationCity(City2);
-//        ((GlobalClass) this.getApplication()).setExpectedSalary(Salary);
+        ((GlobalClass) this.getApplication()).setRentPerMonth(Rent);
+        ((GlobalClass) this.getApplication()).setBedrooms(Bedrooms);
+        ((GlobalClass) this.getApplication()).setLocation(Location);
+        ((GlobalClass) this.getApplication()).setUtilities(Utilities);
         GoToEssentials();
     }
 

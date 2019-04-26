@@ -13,11 +13,81 @@ public class GlobalClass extends Application {
     private String Utilities;
 
 
+    private String Grocery;
+    private String Clothes;
+    private String Transportation;
+    private String TransportationCost;
+
+    public String getGrocery() {
+        return Grocery;
+    }
+
+    public void setGrocery(String grocery) {
+        Grocery = grocery;
+    }
+
+    public String getClothes() {
+        return Clothes;
+    }
+
+    public void setClothes(String clothes) {
+        Clothes = clothes;
+    }
+
+    public String getTransportation() {
+        return Transportation;
+    }
+
+    public void setTransportation(String transportation) {
+        Transportation = transportation;
+    }
+
+    public String getTransportationCost() {
+        return TransportationCost;
+    }
+
+    public void setTransportationCost(String transportationCost) {
+        TransportationCost = transportationCost;
+    }
+
+    public String getBedrooms() {
+        return Bedrooms;
+    }
+
+    public void setBedrooms(String bedrooms) {
+        this.Bedrooms = bedrooms;
+    }
+
+    public String getLocation() {
+        return Location;
+    }
+
+    public void setLocation(String location) {
+        this.Location = location;
+    }
+
+    public String getRentPerMonth() {
+        return RentPerMonth;
+    }
+
+    public void setRentPerMonth(String rentPerMonth) {
+        this.RentPerMonth = rentPerMonth;
+    }
+
+    public String getUtilities() {
+        return Utilities;
+    }
+
+    public void setUtilities(String utilities) {
+        this.Utilities = utilities;
+    }
+
     public String getCurrentCity() {
         return CurrentCity;
     }
 
     public void setCurrentCity(String currentCity) {
+
         this.CurrentCity = currentCity;
     }
 
