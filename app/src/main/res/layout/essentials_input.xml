@@ -27,11 +27,79 @@
         android:background="#f0f070"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/EssentialsInput1"
+    <AutoCompleteTextView
+        android:id="@+id/TransportList"
+        android:layout_below="@+id/EssentialsText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:completionThreshold="1"
+        android:hint="@string/PersonalPublicHint"
+        android:completionHint="Public Transportation or Auto Costs"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/EssentialsText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/EssentialsText2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TransportList"
+        android:text="@string/EssentialsText3"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/TransportationCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EssentialsText3"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/GasolineHint"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/EssentialsText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TransportationCost"
+        android:text="@string/EssentialsText4"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Grocery"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EssentialsText4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/EssentialsText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Grocery"
+        android:text="@string/EssentialsText5"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Clothes"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EssentialsText5"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
