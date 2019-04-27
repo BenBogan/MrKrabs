@@ -57,7 +57,7 @@ public class GeneralInput extends Activity implements OnClickListener{
         String City2 = CitiesList2.getText().toString();
         String Salary= ExpectedSalary.getText().toString();
 
-        if ((!Arrays.asList(Cities).contains(City1))&&(!Arrays.asList(Cities).contains(City2))) {
+        if ((!(Arrays.asList(Cities).contains(City1)))&&(!(Arrays.asList(Cities).contains(City2)))) {
             Toast CurrentError = Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG);
             CurrentError.setGravity(Gravity.CENTER, 0, -1500);
             Toast DestinationError = Toast.makeText(GeneralInput.this, "Please Enter A Supported Destination City", Toast.LENGTH_LONG);
