@@ -56,13 +56,21 @@ public class GeneralInput extends Activity implements OnClickListener{
         String City2 = CitiesList2.getText().toString();
         String Salary= ExpectedSalary.getText().toString();
 
+        if (!Arrays.asList(Cities).contains(City1)) {
+            Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        if (!Arrays.asList(Cities).contains(City2)) {
+            Toast.makeText(GeneralInput.this, "Please Enter A Supported Destination City", Toast.LENGTH_LONG).show();
+            return;
+        }
+
         ((GlobalClass) this.getApplication()).setCurrentCity(City1);
         ((GlobalClass) this.getApplication()).setDestinationCity(City2);
         ((GlobalClass) this.getApplication()).setExpectedSalary(Salary);
 
-        if (!Arrays.asList(Cities).contains(City1)) {
-            Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG).show();
-        }
+
         GoToRent();
     }
 
