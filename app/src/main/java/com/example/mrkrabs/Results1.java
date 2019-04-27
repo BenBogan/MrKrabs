@@ -37,8 +37,9 @@ public class Results1 extends Activity implements OnClickListener{
 
     private Button JSONTestButton;
     private JSONObject LocalObject;
-    private String[] HomePrices;
-    private String[] AwayPrices;
+    private TextView TestText1;
+    private String[] HomePrices = {"","","","","","","","","","","","","","","","","","","","","","",""};
+    private String[] AwayPrices = {"","","","","","","","","","","","","","","","","","","","","","",""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class Results1 extends Activity implements OnClickListener{
 
         setContentView(R.layout.results1);
 
+        TestText1 = findViewById(R.id.JSONResults1);
         JSONTestButton = findViewById(R.id.Results1Button);
         JSONTestButton.setOnClickListener(this);
 
@@ -57,6 +59,7 @@ public class Results1 extends Activity implements OnClickListener{
         String City2=((GlobalClass) this.getApplication()).getDestinationCity();
         JSONreturnFunction(City1, true);
         JSONreturnFunction(City2, false);
+        TestText1.setText(HomePrices[0]);
     }
 
     private static final String[] Cities = new String[] {
@@ -75,15 +78,84 @@ public class Results1 extends Activity implements OnClickListener{
                     @Override
                     public void onResponse(JSONObject response) {
                         JSONObject FullObject = response;
-                        LocalObject = FullObject;
-                        JSONArray FullArray = LocalObject.optJSONArray("prices");
-                        JSONObject AvgSal = FullArray.optJSONObject(40);
-                        String AvgSalary = AvgSal.optString("average_price");
+                        JSONArray FullArray = FullObject.optJSONArray("prices");
+                        JSONObject  x0= FullArray.optJSONObject(40); String X0 = x0.optString("average_price");
+                        JSONObject  x1= FullArray.optJSONObject(21); String X1 = x1.optString("average_price");
+                        JSONObject  x2= FullArray.optJSONObject(23); String X2 = x2.optString("average_price");
+                        JSONObject  x3= FullArray.optJSONObject(22); String X3 = x3.optString("average_price");
+                        JSONObject  x4= FullArray.optJSONObject(24); String X4 = x4.optString("average_price");
+                        JSONObject  x5= FullArray.optJSONObject(27); String X5 = x5.optString("average_price");
+                        JSONObject  x6= FullArray.optJSONObject(25); String X6 = x6.optString("average_price");
+                        JSONObject  x7= FullArray.optJSONObject(19); String X7 = x7.optString("average_price");
+                        JSONObject  x8= FullArray.optJSONObject(16); String X8 = x8.optString("average_price");
+                        JSONObject  x9= FullArray.optJSONObject(8); String X9 = x9.optString("average_price");
+                        JSONObject  x10= FullArray.optJSONObject(10); String X10 = x10.optString("average_price");
+                        JSONObject  x11= FullArray.optJSONObject(17); String X11 = x11.optString("average_price");
+                        JSONObject  x12= FullArray.optJSONObject(9); String X12 = x12.optString("average_price");
+                        JSONObject  x13= FullArray.optJSONObject(7); String X13 = x13.optString("average_price");
+                        JSONObject  x14= FullArray.optJSONObject(32); String X14 = x14.optString("average_price");
+                        JSONObject  x15= FullArray.optJSONObject(31); String X15 = x15.optString("average_price");
+                        JSONObject  x16= FullArray.optJSONObject(34); String X16 = x16.optString("average_price");
+                        JSONObject  x17= FullArray.optJSONObject(33); String X17 = x17.optString("average_price");
+                        JSONObject  x18= FullArray.optJSONObject(0); String X18 = x18.optString("average_price");
+                        JSONObject  x19= FullArray.optJSONObject(3); String X19 = x19.optString("average_price");
+                        JSONObject  x20= FullArray.optJSONObject(4); String X20 = x20.optString("average_price");
+                        JSONObject  x21= FullArray.optJSONObject(28); String X21 = x21.optString("average_price");
+                        JSONObject  x22= FullArray.optJSONObject(29); String X22 = x22.optString("average_price");
+                        JSONObject  x23= FullArray.optJSONObject(30); String X23 = x23.optString("average_price");
+
+
                         if (X==true){
-                            HomePrices[0]=AvgSalary;
+                            HomePrices[0]=X0;
+                            HomePrices[1]=X1;
+                            HomePrices[2]=X2;
+                            HomePrices[3]=X3;
+                            HomePrices[4]=X4;
+                            HomePrices[5]=X5;
+                            HomePrices[6]=X6;
+                            HomePrices[7]=X7;
+                            HomePrices[8]=X8;
+                            HomePrices[9]=X9;
+                            HomePrices[10]=X10;
+                            HomePrices[11]=X11;
+                            HomePrices[12]=X12;
+                            HomePrices[13]=X13;
+                            HomePrices[14]=X14;
+                            HomePrices[15]=X15;
+                            HomePrices[16]=X16;
+                            HomePrices[17]=X17;
+                            HomePrices[18]=X18;
+                            HomePrices[19]=X19;
+                            HomePrices[20]=X20;
+                            HomePrices[21]=X21;
+                            HomePrices[22]=X22;
+                            HomePrices[23]=X23;
                         }
                         else {
-                            AwayPrices[0]=AvgSalary;
+                            AwayPrices[0]=X0;
+                            AwayPrices[1]=X1;
+                            AwayPrices[2]=X2;
+                            AwayPrices[3]=X3;
+                            AwayPrices[4]=X4;
+                            AwayPrices[5]=X5;
+                            AwayPrices[6]=X6;
+                            AwayPrices[7]=X7;
+                            AwayPrices[8]=X8;
+                            AwayPrices[9]=X9;
+                            AwayPrices[10]=X10;
+                            AwayPrices[11]=X11;
+                            AwayPrices[12]=X12;
+                            AwayPrices[13]=X13;
+                            AwayPrices[14]=X14;
+                            AwayPrices[15]=X15;
+                            AwayPrices[16]=X16;
+                            AwayPrices[17]=X17;
+                            AwayPrices[18]=X18;
+                            AwayPrices[19]=X19;
+                            AwayPrices[20]=X20;
+                            AwayPrices[21]=X21;
+                            AwayPrices[22]=X22;
+                            AwayPrices[23]=X23;
                         }
 
                     }
