@@ -61,7 +61,7 @@ public class GeneralInput extends Activity implements OnClickListener{
             Toast CurrentError = Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG);
             CurrentError.setGravity(Gravity.CENTER, 0, -1500);
             Toast DestinationError = Toast.makeText(GeneralInput.this, "Please Enter A Supported Destination City", Toast.LENGTH_LONG);
-            DestinationError.setGravity(Gravity.CENTER, 0, -1200);
+            DestinationError.setGravity(Gravity.CENTER, 0, 00);
             DestinationError.show();
             CurrentError.show();
             return;
