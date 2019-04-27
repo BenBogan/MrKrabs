@@ -59,7 +59,7 @@ public class GeneralInput extends Activity implements OnClickListener{
 
         if (!Arrays.asList(Cities).contains(City1)) {
             Toast CurrentError = Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG);
-            CurrentError.setGravity(Gravity.CENTER, 0, -200);
+            CurrentError.setGravity(Gravity.CENTER, 0, -500);
             CurrentError.show();
             return;
         }
