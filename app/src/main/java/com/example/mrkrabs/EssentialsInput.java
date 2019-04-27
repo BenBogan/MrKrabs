@@ -10,12 +10,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class EssentialsInput extends Activity implements OnClickListener{
 
 
     private Button EssentialsButton;
-    private AutoCompleteTextView Transportation;
+    private Spinner Transportation;
     private EditText Grocery;
     private EditText Clothes;
     private EditText TransportationCost;
@@ -25,10 +26,13 @@ public class EssentialsInput extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.essentials_input);
 
+        String[] TransportOptions = new String[]{"Public", "Personal"};
+
         ArrayAdapter<String> TransportAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, TransportType);
+                android.R.layout.simple_dropdown_item_1line, TransportOptions);
 
         Transportation = findViewById(R.id.TransportList);
+
         Transportation.setAdapter(TransportAdapter);
 
         Grocery=findViewById(R.id.Grocery);
@@ -47,7 +51,7 @@ public class EssentialsInput extends Activity implements OnClickListener{
         String Grocery1 = Grocery.getText().toString();
         String Clothes1 = Clothes.getText().toString();
         String TransportationCost1= TransportationCost.getText().toString();
-        String Transportation1= Transportation.getText().toString();
+        String Transportation1= Transportation.getSelectedItem().toString();
 
         ((GlobalClass) this.getApplication()).setGrocery(Grocery1);
         ((GlobalClass) this.getApplication()).setClothes(Clothes1);
@@ -62,7 +66,5 @@ public class EssentialsInput extends Activity implements OnClickListener{
         Intent shift = new Intent(EssentialsInput.this, EntertainmentInput.class);
         startActivity(shift);
     }
-    private static final String[] TransportType = new String[]{
-            "Public", "Private ($ for Gasoline)"
-    };
+
 }
