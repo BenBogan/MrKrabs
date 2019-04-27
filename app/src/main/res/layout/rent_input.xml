@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#bdffbd" >
+
+    <TextView
+        android:id="@+id/RentText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/RentText1"
+        android:background="#f0f070"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/RentText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RentText1"
+        android:text="@string/RentText2"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Bedrooms"
+        android:layout_below="@+id/RentText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Location"
+        android:maxLength="1"/>
+
+    <TextView
+        android:id="@+id/RentText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Bedrooms"
+        android:text="@string/RentText3"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/Location"
+        android:layout_below="@+id/RentText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:completionThreshold="1"
+        android:hint="@string/InOutHint"
+        android:completionHint="Number of Bedrooms"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/RentInput"/>
+
+    <TextView
+        android:id="@+id/RentText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Location"
+        android:text="@string/RentText4"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/RentInput"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RentText4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Utilities"
+        android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/RentText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RentInput"
+        android:text="@string/RentText5"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Utilities"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RentText5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="6"/>
+
+    <Button
+        android:id="@+id/RentButton"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Next"
+        android:background="#f0f070"
+        android:textSize="21dp"/>
+
+
+
+</RelativeLayout>
