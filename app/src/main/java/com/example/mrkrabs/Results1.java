@@ -38,8 +38,8 @@ public class Results1 extends Activity implements OnClickListener{
     private Button JSONTestButton;
     private JSONObject LocalObject;
     private TextView TestText1;
-    private String[] HomePrices = {"","","","","","","","","","","","","","","","","","","","","","",""};
-    private String[] AwayPrices = {"","","","","","","","","","","","","","","","","","","","","","",""};
+    private String[] HomePrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
+    private String[] AwayPrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +77,8 @@ public class Results1 extends Activity implements OnClickListener{
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        JSONObject FullObject = response;
-                        JSONArray FullArray = FullObject.optJSONArray("prices");
+//                        JSONObject FullObject = response;
+                        JSONArray FullArray = response.optJSONArray("prices");
                         JSONObject  x0= FullArray.optJSONObject(40); String X0 = x0.optString("average_price");
                         JSONObject  x1= FullArray.optJSONObject(21); String X1 = x1.optString("average_price");
                         JSONObject  x2= FullArray.optJSONObject(23); String X2 = x2.optString("average_price");
