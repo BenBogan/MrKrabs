@@ -3,6 +3,7 @@ package com.example.mrkrabs;
 import android.app.Application;
 
 public class GlobalClass extends Application {
+
     private String CurrentCity;
     private String DestinationCity;
     private String ExpectedSalary;
@@ -17,6 +18,8 @@ public class GlobalClass extends Application {
     private String Clothes;
     private String Transportation;
     private String TransportationCost;
+
+
 
     public String getGrocery() {
         return Grocery;
