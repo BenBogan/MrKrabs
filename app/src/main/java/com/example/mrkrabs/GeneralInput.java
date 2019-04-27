@@ -32,6 +32,7 @@ public class GeneralInput extends Activity implements OnClickListener{
         CitiesList1 = findViewById(R.id.cities_list1);
         CitiesList1.setAdapter(CitiesAdapter1);
 
+
         ArrayAdapter<String> CitiesAdapter2 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line, Cities);
 
