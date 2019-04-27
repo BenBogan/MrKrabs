@@ -35,7 +35,11 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Alcohol"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/EntertainmentText3"
@@ -56,7 +60,11 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Other"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/EntertainmentText4"
@@ -78,7 +86,11 @@
         android:gravity="center"
         android:ems="10"
         android:hint="@string/OtherHint"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Fitness"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/EntertainmentText5"
@@ -100,7 +112,9 @@
         android:gravity="center"
         android:ems="10"
         android:hint="@string/FitnessHint"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="6"/>
 
     <Button
         android:id="@+id/EntertainmentButton"

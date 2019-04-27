@@ -27,17 +27,19 @@
         android:background="#f0f070"
         android:textSize="20sp" />
 
-    <AutoCompleteTextView
+    <EditText
         android:id="@+id/Bedrooms"
         android:layout_below="@+id/RentText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:completionThreshold="1"
-        android:hint="@string/BedroomsHint"
-        android:completionHint="Number of Bedrooms"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Location"
+        android:maxLength="1"/>
 
     <TextView
         android:id="@+id/RentText3"
@@ -60,7 +62,10 @@
         android:completionThreshold="1"
         android:hint="@string/InOutHint"
         android:completionHint="Number of Bedrooms"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/RentInput"/>
 
     <TextView
         android:id="@+id/RentText4"
@@ -82,7 +87,11 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Utilities"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/RentText5"
@@ -104,7 +113,9 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="6"/>
 
     <Button
         android:id="@+id/RentButton"
