@@ -3,8 +3,9 @@ package com.example.mrkrabs;
 import android.app.Application;
 import android.widget.EditText;
 
-public class GlobalClass extends Application {
+import org.json.JSONArray;
 
+public class GlobalClass extends Application {
     private String CurrentCity;
     private String DestinationCity;
     private String ExpectedSalary;
@@ -20,42 +21,36 @@ public class GlobalClass extends Application {
     private String Transportation;
     private String TransportationCost;
 
-    private String DiningOut;
-    private String Alcohol;
     private String Fitness;
-    private String Other;
+    private String Misc;
+    private String Dining;
+    private String Alcohol;
 
-    public String getDiningOut() {
-        return DiningOut;
-    }
+    private JSONArray Prices;
 
-    public void setDiningOut(String diningOut) {
-        this.DiningOut = diningOut;
-    }
 
-    public String getAlcohol() {
-        return Alcohol;
-    }
 
-    public void setAlcohol(String alcohol) {
-        this.Alcohol = alcohol;
-    }
+    public JSONArray getPrices() { return Prices; }
 
-    public String getFitness() {
-        return Fitness;
-    }
+    public void setPrices(JSONArray prices) { Prices = prices; }
 
-    public void setFitness(String fitness) {
-        this.Fitness = fitness;
-    }
 
-    public String getOther() {
-        return Other;
-    }
 
-    public void setOther(String other) {
-        this.Other = other;
-    }
+    public String getMisc() { return Misc; }
+
+    public void setMisc(String misc) { Misc = misc; }
+
+    public String getDining() { return Dining; }
+
+    public void setDining(String dining) { Dining = dining; }
+
+    public String getAlcohol() { return Alcohol; }
+
+    public void setAlcohol(String alcohol) { Alcohol = alcohol; }
+
+    public String getFitness() { return Fitness; }
+
+    public void setFitness(String fitness) { Fitness = fitness; }
 
     public String getGrocery() {
         return Grocery;
