@@ -36,7 +36,10 @@
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:inputType="number"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Location"
+        android:maxLength="1"/>
 
     <TextView
         android:id="@+id/RentText3"
@@ -60,7 +63,9 @@
         android:hint="@string/InOutHint"
         android:completionHint="Number of Bedrooms"
         android:textAlignment="center"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/RentInput"/>
 
     <TextView
         android:id="@+id/RentText4"
@@ -83,7 +88,10 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="number"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Utilities"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/RentText5"
@@ -106,7 +114,8 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="number"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:maxLength="6"/>
 
     <Button
         android:id="@+id/RentButton"

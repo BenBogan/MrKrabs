@@ -38,7 +38,9 @@
         android:hint="@string/PersonalPublicHint"
         android:completionHint="Public Transportation or Auto Costs"
         android:textAlignment="center"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/TransportationCost"/>
 
     <TextView
         android:id="@+id/EssentialsText3"
@@ -61,7 +63,10 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="number"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Grocery"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/EssentialsText4"
@@ -84,7 +89,10 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="number"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Clothes"
+        android:maxLength="6"/>
 
     <TextView
         android:id="@+id/EssentialsText5"
@@ -107,7 +115,8 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="number"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:maxLength="6"/>
 
     <Button
         android:id="@+id/EssentialsButton"
