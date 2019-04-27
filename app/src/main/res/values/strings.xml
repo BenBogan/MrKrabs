@@ -21,9 +21,21 @@
     <string name="RentText5">Utilities and Internet</string>
 
     <string name="EssentialsText1">Price of Essentials</string>
-    <string name="EssentialsText2">Groceries per Month</string>
+    <string name="EssentialsText2">Type of Transportation</string>
+    <string name="PersonalPublicHint">Public or Personal</string>
+    <string name="EssentialsText3">Transportation Cost per Month</string>
+    <string name="GasolineHint">Public or Gasoline Costs</string>
+    <string name="EssentialsText4">Groceries per Month</string>
+    <string name="EssentialsText5">Clothes per Month</string>
+
     <string name="EntertainmentText1">Entertainment</string>
     <string name="EntertainmentText2">Dining Out Costs</string>
+    <string name="EntertainmentText3">Alcohol</string>
+    <string name="EntertainmentText4">Fitness Costs</string>
+    <string name="FitnessHint">Gym, Club Sports, Dance Lessons</string>
+    <string name="EntertainmentText5">Miscellaneous Costs</string>
+    <string name="OtherHint">Cinema, Subscriptions, Misc. </string>
+
     <string name="Results1Text1">Results</string>
 
     <string-array name="cities_list"><item>Boston</item></string-array>
