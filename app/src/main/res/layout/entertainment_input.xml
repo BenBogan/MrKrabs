@@ -28,14 +28,93 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/EntertainmentInput1"
+        android:id="@+id/DiningOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/EntertainmentText2"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Alcohol"
+        android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/EntertainmentText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/DiningOut"
+        android:text="@string/EntertainmentText3"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EntertainmentText3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Other"
+        android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/EntertainmentText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Alcohol"
+        android:text="@string/EntertainmentText4"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EntertainmentText4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="@string/OtherHint"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusRight="@+id/Fitness"
+        android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/EntertainmentText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Other"
+        android:text="@string/EntertainmentText5"
+        android:layout_marginTop="10dp"
+        android:background="#f0f070"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Fitness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EntertainmentText5"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="@string/FitnessHint"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="6"/>
 
     <Button
         android:id="@+id/EntertainmentButton"

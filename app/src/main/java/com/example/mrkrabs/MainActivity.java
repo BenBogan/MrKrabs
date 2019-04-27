@@ -10,7 +10,6 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-
     private Button welcomebutton;
 
     @Override
@@ -28,7 +27,7 @@ public class MainActivity extends Activity implements OnClickListener{
     }
 
     private void GoToGeneral(){
-        Intent shift = new Intent(MainActivity.this, GeneralInput.class);
-        startActivity(shift);
+        Intent GeneralShift = new Intent(MainActivity.this, GeneralInput.class);
+        startActivity(GeneralShift);
     }
 }
