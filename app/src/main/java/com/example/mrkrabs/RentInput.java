@@ -11,13 +11,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class RentInput extends Activity implements OnClickListener {
 
     private EditText RentInput1;
     private EditText Utilities1;
-    private AutoCompleteTextView Location1;
+    private Spinner Location1;
     private EditText Bedrooms1;
     private Button RentButton;
 
@@ -26,8 +27,10 @@ public class RentInput extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rent_input);
 
+        String[] LocationOptions = new String[]{"InCity", "Out of City"};
+
         ArrayAdapter<String> Location = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, ApartmentLocation);
+                android.R.layout.simple_dropdown_item_1line, LocationOptions);
 
         Location1 = findViewById(R.id.Location);
         Location1.setAdapter(Location);
@@ -45,7 +48,7 @@ public class RentInput extends Activity implements OnClickListener {
 
     public void onClick(View a) {
         String Bedrooms = Bedrooms1.getText().toString();
-        String Location = Location1.getText().toString();
+        String Location = Location1.getSelectedItem().toString();
         String Rent= RentInput1.getText().toString();
         String Utilities= Utilities1.getText().toString();
 

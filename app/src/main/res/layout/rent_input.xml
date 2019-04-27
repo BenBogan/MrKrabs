@@ -52,7 +52,7 @@
         android:background="#f0f070"
         android:textSize="20sp" />
 
-    <AutoCompleteTextView
+    <Spinner
         android:id="@+id/Location"
         android:layout_below="@+id/RentText3"
         android:layout_width="match_parent"
@@ -61,11 +61,14 @@
         android:layout_marginTop="10dp"
         android:completionThreshold="1"
         android:hint="@string/InOutHint"
-        android:completionHint="Number of Bedrooms"
+        android:completionHint="In or Out of the City"
         android:textAlignment="center"
         android:singleLine="true"
         android:imeOptions="actionNext"
-        android:nextFocusRight="@+id/RentInput"/>
+        android:nextFocusRight="@+id/RentInput"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+    />
 
     <TextView
         android:id="@+id/RentText4"
