@@ -18,7 +18,7 @@ public class RentInput extends Activity implements OnClickListener {
     private EditText RentInput1;
     private EditText Utilities1;
     private AutoCompleteTextView Location1;
-    private AutoCompleteTextView Bedrooms1;
+    private EditText Bedrooms1;
     private Button RentButton;
 
     @Override
@@ -32,11 +32,7 @@ public class RentInput extends Activity implements OnClickListener {
         Location1 = findViewById(R.id.Location);
         Location1.setAdapter(Location);
 
-        ArrayAdapter<String> bedroom = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, NumBedrooms);
-
         Bedrooms1 = findViewById(R.id.Bedrooms);
-        Bedrooms1.setAdapter(bedroom);
 
         RentInput1 = findViewById(R.id.RentInput);
         Utilities1 = findViewById(R.id.Utilities);
@@ -68,9 +64,5 @@ public class RentInput extends Activity implements OnClickListener {
 
     private static final String[] ApartmentLocation = new String[]{
             "In City", "Outside City"
-    };
-
-    private static final String[] NumBedrooms = new String[]{
-            "1", "2", "3+"
     };
 }

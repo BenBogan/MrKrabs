@@ -37,7 +37,8 @@
         android:completionThreshold="1"
         android:completionHint="Select a City"
         android:hint="@string/CityListHint"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:singleLine="true"/>
 
     <TextView
         android:id="@+id/GeneralText3"
@@ -60,7 +61,8 @@
         android:completionThreshold="1"
         android:hint="@string/CityListHint"
         android:completionHint="Select a City"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:singleLine="true"/>
 
     <TextView
         android:id="@+id/GeneralText4"
@@ -81,7 +83,8 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="number"
+        android:singleLine="true"/>
 
     <Button
         android:id="@+id/GeneralButton"
