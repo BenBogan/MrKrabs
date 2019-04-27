@@ -2,6 +2,8 @@ package com.example.mrkrabs;
 
 import android.app.Application;
 
+import org.json.JSONArray;
+
 public class GlobalClass extends Application {
     private String CurrentCity;
     private String DestinationCity;
@@ -17,6 +19,37 @@ public class GlobalClass extends Application {
     private String Clothes;
     private String Transportation;
     private String TransportationCost;
+
+    private String Fitness;
+    private String Misc;
+    private String Dining;
+    private String Alcohol;
+
+    private JSONArray Prices;
+
+
+
+    public JSONArray getPrices() { return Prices; }
+
+    public void setPrices(JSONArray prices) { Prices = prices; }
+
+
+
+    public String getMisc() { return Misc; }
+
+    public void setMisc(String misc) { Misc = misc; }
+
+    public String getDining() { return Dining; }
+
+    public void setDining(String dining) { Dining = dining; }
+
+    public String getAlcohol() { return Alcohol; }
+
+    public void setAlcohol(String alcohol) { Alcohol = alcohol; }
+
+    public String getFitness() { return Fitness; }
+
+    public void setFitness(String fitness) { Fitness = fitness; }
 
     public String getGrocery() {
         return Grocery;
