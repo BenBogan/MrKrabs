@@ -1,6 +1,7 @@
 package com.example.mrkrabs;
 
 import android.app.Activity;
+import android.view.Gravity;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListAdapter;
@@ -29,14 +30,14 @@ public class GeneralInput extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.general_input);
 
-        ArrayAdapter<String> CitiesAdapter1 = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> CitiesAdapter1 = new ArrayAdapter<>(this,
                 android.R.layout.simple_dropdown_item_1line, Cities);
 
         CitiesList1 = findViewById(R.id.cities_list1);
         CitiesList1.setAdapter(CitiesAdapter1);
 
 
-        ArrayAdapter<String> CitiesAdapter2 = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> CitiesAdapter2 = new ArrayAdapter<>(this,
                 android.R.layout.simple_dropdown_item_1line, Cities);
 
         CitiesList2 = findViewById(R.id.cities_list2);
@@ -57,7 +58,9 @@ public class GeneralInput extends Activity implements OnClickListener{
         String Salary= ExpectedSalary.getText().toString();
 
         if (!Arrays.asList(Cities).contains(City1)) {
-            Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG).show();
+            Toast CurrentError = Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG);
+            CurrentError.setGravity(Gravity.TOP | Gravity.START, 200, 0);
+            CurrentError.show();
             return;
         }
 
