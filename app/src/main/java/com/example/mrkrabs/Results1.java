@@ -58,7 +58,7 @@ public class Results1 extends Activity implements OnClickListener{
         String City1=((GlobalClass) this.getApplication()).getCurrentCity();
         String City2=((GlobalClass) this.getApplication()).getDestinationCity();
         JSONreturnFunction(City1, true);
-        JSONreturnFunction(City2, false);
+//        JSONreturnFunction(City2, false);
         TestText1.setText(HomePrices[0]);
     }
 
@@ -77,10 +77,9 @@ public class Results1 extends Activity implements OnClickListener{
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-//                        JSONObject FullObject = response;
                         JSONArray FullArray = response.optJSONArray("prices");
-                        JSONObject  x0= FullArray.optJSONObject(40); String X0 = x0.optString("average_price");
-                        JSONObject  x1= FullArray.optJSONObject(21); String X1 = x1.optString("average_price");
+                        JSONObject x0 = FullArray.optJSONObject(40); String X0 = x0.optString("average_price");
+                        JSONObject x1= FullArray.optJSONObject(21); String X1 = x1.optString("average_price");
                         JSONObject  x2= FullArray.optJSONObject(23); String X2 = x2.optString("average_price");
                         JSONObject  x3= FullArray.optJSONObject(22); String X3 = x3.optString("average_price");
                         JSONObject  x4= FullArray.optJSONObject(24); String X4 = x4.optString("average_price");
