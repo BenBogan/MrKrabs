@@ -29,7 +29,7 @@ public class EssentialsInput extends Activity implements OnClickListener{
         String[] TransportOptions = new String[]{"Public", "Personal"};
 
         ArrayAdapter<String> TransportAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, TransportOptions);
+                R.layout.dropdown_layout, TransportOptions);
 
         Transportation = findViewById(R.id.TransportList);
 

@@ -10,4 +10,6 @@
     <style
         name="DropDownStyle" parent="android:Widget.TextView.SpinnerItem">
     </style>
+    <style name="DropDownText" parent="android:Widget.TextView.SpinnerItem">
+    </style>
 </resources>
