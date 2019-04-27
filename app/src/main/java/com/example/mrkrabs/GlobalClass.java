@@ -1,6 +1,7 @@
 package com.example.mrkrabs;
 
 import android.app.Application;
+import android.widget.EditText;
 
 public class GlobalClass extends Application {
 
@@ -19,14 +20,49 @@ public class GlobalClass extends Application {
     private String Transportation;
     private String TransportationCost;
 
+    private String DiningOut;
+    private String Alcohol;
+    private String Fitness;
+    private String Other;
 
+    public String getDiningOut() {
+        return DiningOut;
+    }
+
+    public void setDiningOut(String diningOut) {
+        this.DiningOut = diningOut;
+    }
+
+    public String getAlcohol() {
+        return Alcohol;
+    }
+
+    public void setAlcohol(String alcohol) {
+        this.Alcohol = alcohol;
+    }
+
+    public String getFitness() {
+        return Fitness;
+    }
+
+    public void setFitness(String fitness) {
+        this.Fitness = fitness;
+    }
+
+    public String getOther() {
+        return Other;
+    }
+
+    public void setOther(String other) {
+        this.Other = other;
+    }
 
     public String getGrocery() {
         return Grocery;
     }
 
     public void setGrocery(String grocery) {
-        Grocery = grocery;
+        this.Grocery = grocery;
     }
 
     public String getClothes() {
@@ -34,7 +70,7 @@ public class GlobalClass extends Application {
     }
 
     public void setClothes(String clothes) {
-        Clothes = clothes;
+        this.Clothes = clothes;
     }
 
     public String getTransportation() {
@@ -42,7 +78,7 @@ public class GlobalClass extends Application {
     }
 
     public void setTransportation(String transportation) {
-        Transportation = transportation;
+        this.Transportation = transportation;
     }
 
     public String getTransportationCost() {
@@ -50,7 +86,7 @@ public class GlobalClass extends Application {
     }
 
     public void setTransportationCost(String transportationCost) {
-        TransportationCost = transportationCost;
+        this.TransportationCost = transportationCost;
     }
 
     public String getBedrooms() {
