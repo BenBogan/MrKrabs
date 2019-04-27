@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Arrays;
 
 public class GeneralInput extends Activity implements OnClickListener{
 
@@ -48,6 +51,7 @@ public class GeneralInput extends Activity implements OnClickListener{
 
 
     public void onClick(View a){
+
         String City1 = CitiesList1.getText().toString();
         String City2 = CitiesList2.getText().toString();
         String Salary= ExpectedSalary.getText().toString();
@@ -55,6 +59,10 @@ public class GeneralInput extends Activity implements OnClickListener{
         ((GlobalClass) this.getApplication()).setCurrentCity(City1);
         ((GlobalClass) this.getApplication()).setDestinationCity(City2);
         ((GlobalClass) this.getApplication()).setExpectedSalary(Salary);
+
+        if (!Arrays.asList(Cities).contains(City1)) {
+            Toast.makeText(GeneralInput.this, "Please Enter A Supported Current City", Toast.LENGTH_LONG).show();
+        }
         GoToRent();
     }
 
