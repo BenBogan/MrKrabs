@@ -41,9 +41,9 @@
         android:singleLine="true"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/TransportationCost"
-        android:background="@android:drawable/btn_dropdown"
+        android:background="@android:color/darker_gray"
         android:spinnerMode="dropdown"/>
-        />
+
 
     <TextView
         android:id="@+id/EssentialsText3"
