@@ -13,8 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/EntertainmentText1"
-        android:background="#f0f070"
-        android:textSize="30sp" />
+        android:background="#0D3C60"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="29sp" />
 
     <TextView
         android:id="@+id/EntertainmentText2"
@@ -23,8 +25,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/EntertainmentText1"
         android:text="@string/EntertainmentText2"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -48,8 +51,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/DiningOut"
         android:text="@string/EntertainmentText3"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -74,7 +78,8 @@
         android:layout_below="@+id/Alcohol"
         android:text="@string/EntertainmentText4"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:textColor="#ffffff"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -85,7 +90,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:hint="@string/OtherHint"
+        android:hint="@string/FitnessHint"
         android:inputType="number"
         android:singleLine="true"
         android:imeOptions="actionNext"
@@ -99,8 +104,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/Other"
         android:text="@string/EntertainmentText5"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -111,7 +117,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:hint="@string/FitnessHint"
+        android:hint="@string/OtherHint"
         android:inputType="number"
         android:singleLine="true"
         android:maxLength="6"/>
@@ -123,7 +129,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/Next"
-        android:background="#f0f070"
+        android:background="@drawable/button_shape"
         android:textSize="21dp"/>
 
 

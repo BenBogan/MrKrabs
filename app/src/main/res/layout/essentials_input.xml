@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/EssentialsText1"
-        android:background="#f0f070"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#0D3C60"
         android:textSize="30sp" />
 
     <TextView
@@ -23,8 +25,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/EssentialsText1"
         android:text="@string/EssentialsText2"
+        android:textColor="#ffffff"
+        android:background="@drawable/prefilled_text"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
         android:textSize="20sp" />
 
     <Spinner
@@ -52,8 +55,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/TransportList"
         android:text="@string/EssentialsText3"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -78,8 +82,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/TransportationCost"
         android:text="@string/EssentialsText4"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -104,8 +109,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/Grocery"
         android:text="@string/EssentialsText5"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -128,7 +134,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/Next"
-        android:background="#f0f070"
+        android:background="@drawable/button_shape"
         android:textSize="21dp"/>
 
 
