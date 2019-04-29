@@ -36,8 +36,8 @@ import androidx.annotation.Nullable;
 public class Results1 extends Activity implements OnClickListener{
 
     private Button JSONTestButton;
-    private JSONObject LocalObject;
     private TextView TestText1;
+    private TextView TestText2;
     private String[] HomePrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
     private String[] AwayPrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
 
@@ -48,6 +48,7 @@ public class Results1 extends Activity implements OnClickListener{
         setContentView(R.layout.results1);
 
         TestText1 = findViewById(R.id.JSONResults1);
+        TestText2 = findViewById(R.id.JSONResults2);
         JSONTestButton = findViewById(R.id.Results1Button);
         JSONTestButton.setOnClickListener(this);
 
@@ -58,8 +59,13 @@ public class Results1 extends Activity implements OnClickListener{
         String City1=((GlobalClass) this.getApplication()).getCurrentCity();
         String City2=((GlobalClass) this.getApplication()).getDestinationCity();
         JSONreturnFunction(City1, true);
-//        JSONreturnFunction(City2, false);
-        TestText1.setText(HomePrices[0]);
+        JSONreturnFunction(City2, false);
+        ((GlobalClass) this.getApplication()).setCurrentPrice(HomePrices);
+        ((GlobalClass) this.getApplication()).setDestinationPrice(AwayPrices);
+        String HomePriceArray[] = ((GlobalClass) this.getApplication()).getCurrentPrice();
+        String AwayPriceArray[] = ((GlobalClass) this.getApplication()).getDestinationPrice();
+        TestText1.setText(HomePriceArray[0]);
+        TestText2.setText(AwayPriceArray[0]);
     }
 
     private static final String[] Cities = new String[] {
@@ -77,31 +83,30 @@ public class Results1 extends Activity implements OnClickListener{
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        JSONArray FullArray = response.optJSONArray("prices");
-                        JSONObject x0 = FullArray.optJSONObject(40); String X0 = x0.optString("average_price");
-                        JSONObject x1= FullArray.optJSONObject(21); String X1 = x1.optString("average_price");
-                        JSONObject  x2= FullArray.optJSONObject(23); String X2 = x2.optString("average_price");
-                        JSONObject  x3= FullArray.optJSONObject(22); String X3 = x3.optString("average_price");
-                        JSONObject  x4= FullArray.optJSONObject(24); String X4 = x4.optString("average_price");
-                        JSONObject  x5= FullArray.optJSONObject(27); String X5 = x5.optString("average_price");
-                        JSONObject  x6= FullArray.optJSONObject(25); String X6 = x6.optString("average_price");
-                        JSONObject  x7= FullArray.optJSONObject(19); String X7 = x7.optString("average_price");
-                        JSONObject  x8= FullArray.optJSONObject(16); String X8 = x8.optString("average_price");
-                        JSONObject  x9= FullArray.optJSONObject(8); String X9 = x9.optString("average_price");
-                        JSONObject  x10= FullArray.optJSONObject(10); String X10 = x10.optString("average_price");
-                        JSONObject  x11= FullArray.optJSONObject(17); String X11 = x11.optString("average_price");
-                        JSONObject  x12= FullArray.optJSONObject(9); String X12 = x12.optString("average_price");
-                        JSONObject  x13= FullArray.optJSONObject(7); String X13 = x13.optString("average_price");
-                        JSONObject  x14= FullArray.optJSONObject(32); String X14 = x14.optString("average_price");
-                        JSONObject  x15= FullArray.optJSONObject(31); String X15 = x15.optString("average_price");
-                        JSONObject  x16= FullArray.optJSONObject(34); String X16 = x16.optString("average_price");
-                        JSONObject  x17= FullArray.optJSONObject(33); String X17 = x17.optString("average_price");
-                        JSONObject  x18= FullArray.optJSONObject(0); String X18 = x18.optString("average_price");
-                        JSONObject  x19= FullArray.optJSONObject(3); String X19 = x19.optString("average_price");
-                        JSONObject  x20= FullArray.optJSONObject(4); String X20 = x20.optString("average_price");
-                        JSONObject  x21= FullArray.optJSONObject(28); String X21 = x21.optString("average_price");
-                        JSONObject  x22= FullArray.optJSONObject(29); String X22 = x22.optString("average_price");
-                        JSONObject  x23= FullArray.optJSONObject(30); String X23 = x23.optString("average_price");
+                        String X0 =response.optJSONArray("prices").optJSONObject(40).optString("average_price");
+                        String X1 =response.optJSONArray("prices").optJSONObject(21).optString("average_price");
+                        String X2 =response.optJSONArray("prices").optJSONObject(23).optString("average_price");
+                        String X3 =response.optJSONArray("prices").optJSONObject(22).optString("average_price");
+                        String X4 =response.optJSONArray("prices").optJSONObject(24).optString("average_price");
+                        String X5 =response.optJSONArray("prices").optJSONObject(27).optString("average_price");
+                        String X6 =response.optJSONArray("prices").optJSONObject(25).optString("average_price");
+                        String X7 =response.optJSONArray("prices").optJSONObject(19).optString("average_price");
+                        String X8 =response.optJSONArray("prices").optJSONObject(16).optString("average_price");
+                        String X9 =response.optJSONArray("prices").optJSONObject(8).optString("average_price");
+                        String X10 =response.optJSONArray("prices").optJSONObject(10).optString("average_price");
+                        String X11 =response.optJSONArray("prices").optJSONObject(17).optString("average_price");
+                        String X12 =response.optJSONArray("prices").optJSONObject(9).optString("average_price");
+                        String X13 =response.optJSONArray("prices").optJSONObject(7).optString("average_price");
+                        String X14 =response.optJSONArray("prices").optJSONObject(32).optString("average_price");
+                        String X15 =response.optJSONArray("prices").optJSONObject(31).optString("average_price");
+                        String X16 =response.optJSONArray("prices").optJSONObject(34).optString("average_price");
+                        String X17 =response.optJSONArray("prices").optJSONObject(33).optString("average_price");
+                        String X18 =response.optJSONArray("prices").optJSONObject(0).optString("average_price");
+                        String X19 =response.optJSONArray("prices").optJSONObject(3).optString("average_price");
+                        String X20 =response.optJSONArray("prices").optJSONObject(4).optString("average_price");
+                        String X21 =response.optJSONArray("prices").optJSONObject(28).optString("average_price");
+                        String X22 =response.optJSONArray("prices").optJSONObject(29).optString("average_price");
+                        String X23 =response.optJSONArray("prices").optJSONObject(30).optString("average_price");
 
 
                         if (X==true){

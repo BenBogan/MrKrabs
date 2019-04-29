@@ -25,15 +25,17 @@ public class GlobalClass extends Application {
     private String Dining;
     private String Alcohol;
 
-    private JSONArray Prices;
+    private static String[] CurrentPrice = new String[24];
+    private static String[] DestinationPrice = new String[24];
 
 
+    public static String[] getCurrentPrice() { return CurrentPrice; }
 
-    public JSONArray getPrices() { return Prices; }
+    public static void setCurrentPrice(String[] currentPrice) { CurrentPrice = currentPrice; }
 
-    public void setPrices(JSONArray prices) { Prices = prices; }
+    public static String[] getDestinationPrice() { return DestinationPrice; }
 
-
+    public static void setDestinationPrice(String[] destinationPrice) { DestinationPrice = destinationPrice; }
 
     public String getMisc() { return Misc; }
 
