@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#bdffbd" >
+    android:background="#0D3C60" >
     <!--tools:context=".MainActivity">-->
 
     <!--<android.support.v7.widget.Toolbar-->
@@ -24,7 +24,8 @@
         android:layout_centerHorizontal="true"
         android:text="@string/WelcomeHeader"
         android:textSize="21dp"
-        android:background="#50a050"
+        android:textColor="#ffffff"
+        android:background="#000000"
         android:fontFamily="serif" />
 
     <Button
@@ -34,7 +35,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/WelcomeButton"
-        android:background="#f0f070"
+        android:textColor="#ffffff"
+        android:background="#000000"
         android:textSize="21dp"/>
 
     <pl.droidsonroids.gif.GifImageView
@@ -54,9 +56,10 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:layout_centerHorizontal="true"
-        android:background="#80e080"
+        android:background="#000000"
         android:text="@string/WelcomeText"
         android:textSize="18dp"
+        android:textColor="#ffffff"
         android:typeface="normal"
         android:textAllCaps="true"/>
 

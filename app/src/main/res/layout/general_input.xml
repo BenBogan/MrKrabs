@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#bdffbd" >
+    android:background="#0D3C60">
 
     <TextView
         android:id="@+id/GeneralText1"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/GeneralText1"
-        android:background="#f0f070"
+        android:background="#ffffff"
         android:textSize="30sp" />
 
     <TextView
@@ -23,8 +23,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/GeneralText1"
         android:text="@string/GeneralText2"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <AutoCompleteTextView
@@ -37,6 +38,7 @@
         android:completionThreshold="1"
         android:completionHint="Select a City"
         android:hint="@string/CityListHint"
+        android:textColor="#ffffff"
         android:textAlignment="center"
         android:singleLine="true"
         android:imeOptions="actionNext"
@@ -49,8 +51,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/cities_list1"
         android:text="@string/GeneralText3"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <AutoCompleteTextView
@@ -62,6 +65,7 @@
         android:layout_marginTop="10dp"
         android:completionThreshold="1"
         android:hint="@string/CityListHint"
+        android:textColor="#ffffff"
         android:completionHint="Select a City"
         android:textAlignment="center"
         android:singleLine="true"
@@ -75,8 +79,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/cities_list2"
         android:text="@string/GeneralText4"
+        android:textColor="#ffffff"
         android:layout_marginTop="10dp"
-        android:background="#f0f070"
+        android:background="@drawable/prefilled_text"
         android:textSize="20sp" />
 
     <EditText
@@ -87,6 +92,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:textColor="#ffffff"
         android:inputType="number"
         android:singleLine="true"
         android:maxLength="6"/>
@@ -98,6 +104,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/Next"
+        android:textColor="#ffffff"
         android:background="#f0f070"
         android:textSize="21dp"/>
 
