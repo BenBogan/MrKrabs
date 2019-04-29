@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Mr.Krabs</string>
     <string name="WelcomeButton">Begin Saving! </string>
-    <string name="WelcomeHeader">MoneyMoneyMoneyMoneyMoney </string>
+    <string name="WelcomeHeader">Money Money Money Money Money </string>
     <string name="WelcomeText">Welcome to Mr.Krabs\' Saving App! \n \n Learn to Budget after moving!</string>
     <string name="Next">Next</string>
 

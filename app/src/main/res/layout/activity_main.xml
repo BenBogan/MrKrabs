@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="0dp"
     android:background="#0D3C60" >
     <!--tools:context=".MainActivity">-->
 
@@ -24,9 +24,10 @@
         android:layout_centerHorizontal="true"
         android:text="@string/WelcomeHeader"
         android:textSize="21dp"
-        android:textColor="#ffffff"
-        android:background="#000000"
-        android:fontFamily="serif" />
+        android:textColor="#000000"
+        android:background="#98B6C6"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/ubuntu_mi" />
 
     <Button
         android:id="@+id/WelcomeButton"
@@ -36,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/WelcomeButton"
         android:textColor="#ffffff"
-        android:background="#000000"
+        android:background="@drawable/button_shape"
         android:textSize="21dp"/>
 
     <pl.droidsonroids.gif.GifImageView
@@ -45,7 +46,8 @@
         android:layout_height="300dp"
         android:layout_below="@id/WelcomeHeader"
         android:layout_marginTop="25dp"
-        android:background="@drawable/krabs_money" />
+        android:background="@drawable/krabs_money"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:id="@+id/WelcomeText"
@@ -56,11 +58,11 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:layout_centerHorizontal="true"
-        android:background="#000000"
+        android:background="#98B6C6"
         android:text="@string/WelcomeText"
         android:textSize="18dp"
-        android:textColor="#ffffff"
-        android:typeface="normal"
+        android:textColor="#000000"
+        android:fontFamily="@font/ubuntu_mi"
         android:textAllCaps="true"/>
 
 
