@@ -3,6 +3,8 @@ package com.example.mrkrabs;
 import android.app.Application;
 import android.widget.EditText;
 
+import org.json.JSONArray;
+
 public class GlobalClass extends Application {
 
     private String CurrentCity;
@@ -20,42 +22,38 @@ public class GlobalClass extends Application {
     private String Transportation;
     private String TransportationCost;
 
-    private String DiningOut;
-    private String Alcohol;
     private String Fitness;
-    private String Other;
+    private String Misc;
+    private String Dining;
+    private String Alcohol;
 
-    public String getDiningOut() {
-        return DiningOut;
-    }
+    private static String[] CurrentPrice = new String[24];
+    private static String[] DestinationPrice = new String[24];
 
-    public void setDiningOut(String diningOut) {
-        this.DiningOut = diningOut;
-    }
 
-    public String getAlcohol() {
-        return Alcohol;
-    }
+    public static String[] getCurrentPrice() { return CurrentPrice; }
 
-    public void setAlcohol(String alcohol) {
-        this.Alcohol = alcohol;
-    }
+    public static void setCurrentPrice(String[] currentPrice) { CurrentPrice = currentPrice; }
 
-    public String getFitness() {
-        return Fitness;
-    }
+    public static String[] getDestinationPrice() { return DestinationPrice; }
 
-    public void setFitness(String fitness) {
-        this.Fitness = fitness;
-    }
+    public static void setDestinationPrice(String[] destinationPrice) { DestinationPrice = destinationPrice; }
 
-    public String getOther() {
-        return Other;
-    }
+    public String getMisc() { return Misc; }
 
-    public void setOther(String other) {
-        this.Other = other;
-    }
+    public void setMisc(String misc) { Misc = misc; }
+
+    public String getDining() { return Dining; }
+
+    public void setDining(String dining) { Dining = dining; }
+
+    public String getAlcohol() { return Alcohol; }
+
+    public void setAlcohol(String alcohol) { Alcohol = alcohol; }
+
+    public String getFitness() { return Fitness; }
+
+    public void setFitness(String fitness) { Fitness = fitness; }
 
     public String getGrocery() {
         return Grocery;
