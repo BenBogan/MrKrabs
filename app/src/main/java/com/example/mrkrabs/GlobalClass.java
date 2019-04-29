@@ -6,7 +6,6 @@ import android.widget.EditText;
 import org.json.JSONArray;
 
 public class GlobalClass extends Application {
-
     private String CurrentCity;
     private String DestinationCity;
     private String ExpectedSalary;
