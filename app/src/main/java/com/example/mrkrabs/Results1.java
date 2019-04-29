@@ -61,17 +61,18 @@ public class Results1 extends Activity implements OnClickListener{
         TestText5 = findViewById(R.id.JSONResults5);
         JSONTestButton = findViewById(R.id.Results1Button);
         JSONTestButton.setOnClickListener(this);
-
-
-    }
-
-    public void onClick(View a){
         String City1=((GlobalClass) this.getApplication()).getCurrentCity();
         String City2=((GlobalClass) this.getApplication()).getDestinationCity();
         JSONreturnFunction(City1, true);
         JSONreturnFunction(City2, false);
         ((GlobalClass) this.getApplication()).setCurrentPrice(HomePrices);
         ((GlobalClass) this.getApplication()).setDestinationPrice(AwayPrices);
+
+
+
+    }
+
+    public void onClick(View a){
         String HomePriceArray[] = ((GlobalClass) this.getApplication()).getCurrentPrice();
         String AwayPriceArray[] = ((GlobalClass) this.getApplication()).getDestinationPrice();
         TestText1.setText(HomePriceArray[0]);
