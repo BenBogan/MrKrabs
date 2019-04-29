@@ -32,12 +32,19 @@ import java.lang.String;
 
 import androidx.annotation.Nullable;
 
+import static android.content.ContentValues.TAG;
+
 
 public class Results1 extends Activity implements OnClickListener{
 
     private Button JSONTestButton;
     private TextView TestText1;
     private TextView TestText2;
+    private TextView TestText3;
+    private TextView TestText4;
+    private TextView TestText5;
+    private int[] ItemIds =  {105,26,28,27,29,33,30,24,18,9,12,19,11,8,62,60,66,64,1,4,5,40,42,44};
+    private String[] AvgPrices = {"3057.24","1264.79","2061.65","995.2","1606.72","151.74","62.4","2.72","2.25","2.35","4.78","3.84","2.27","3.11","34.62","43.06","94.36","73.84","14","4","5.75","35.91","15.07","12"};
     private String[] HomePrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
     private String[] AwayPrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
 
@@ -49,6 +56,9 @@ public class Results1 extends Activity implements OnClickListener{
 
         TestText1 = findViewById(R.id.JSONResults1);
         TestText2 = findViewById(R.id.JSONResults2);
+        TestText3 = findViewById(R.id.JSONResults3);
+        TestText4 = findViewById(R.id.JSONResults4);
+        TestText5 = findViewById(R.id.JSONResults5);
         JSONTestButton = findViewById(R.id.Results1Button);
         JSONTestButton.setOnClickListener(this);
 
@@ -66,6 +76,9 @@ public class Results1 extends Activity implements OnClickListener{
         String AwayPriceArray[] = ((GlobalClass) this.getApplication()).getDestinationPrice();
         TestText1.setText(HomePriceArray[0]);
         TestText2.setText(AwayPriceArray[0]);
+        TestText3.setText(AwayPriceArray[5]);
+        TestText4.setText(AwayPriceArray[16]);
+        TestText5.setText(AwayPriceArray[23]);
     }
 
     private static final String[] Cities = new String[] {
@@ -83,86 +96,109 @@ public class Results1 extends Activity implements OnClickListener{
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        String X0 =response.optJSONArray("prices").optJSONObject(40).optString("average_price");
-                        String X1 =response.optJSONArray("prices").optJSONObject(21).optString("average_price");
-                        String X2 =response.optJSONArray("prices").optJSONObject(23).optString("average_price");
-                        String X3 =response.optJSONArray("prices").optJSONObject(22).optString("average_price");
-                        String X4 =response.optJSONArray("prices").optJSONObject(24).optString("average_price");
-                        String X5 =response.optJSONArray("prices").optJSONObject(27).optString("average_price");
-                        String X6 =response.optJSONArray("prices").optJSONObject(25).optString("average_price");
-                        String X7 =response.optJSONArray("prices").optJSONObject(19).optString("average_price");
-                        String X8 =response.optJSONArray("prices").optJSONObject(16).optString("average_price");
-                        String X9 =response.optJSONArray("prices").optJSONObject(8).optString("average_price");
-                        String X10 =response.optJSONArray("prices").optJSONObject(10).optString("average_price");
-                        String X11 =response.optJSONArray("prices").optJSONObject(17).optString("average_price");
-                        String X12 =response.optJSONArray("prices").optJSONObject(9).optString("average_price");
-                        String X13 =response.optJSONArray("prices").optJSONObject(7).optString("average_price");
-                        String X14 =response.optJSONArray("prices").optJSONObject(32).optString("average_price");
-                        String X15 =response.optJSONArray("prices").optJSONObject(31).optString("average_price");
-                        String X16 =response.optJSONArray("prices").optJSONObject(34).optString("average_price");
-                        String X17 =response.optJSONArray("prices").optJSONObject(33).optString("average_price");
-                        String X18 =response.optJSONArray("prices").optJSONObject(0).optString("average_price");
-                        String X19 =response.optJSONArray("prices").optJSONObject(3).optString("average_price");
-                        String X20 =response.optJSONArray("prices").optJSONObject(4).optString("average_price");
-                        String X21 =response.optJSONArray("prices").optJSONObject(28).optString("average_price");
-                        String X22 =response.optJSONArray("prices").optJSONObject(29).optString("average_price");
-                        String X23 =response.optJSONArray("prices").optJSONObject(30).optString("average_price");
-
-
-                        if (X==true){
-                            HomePrices[0]=X0;
-                            HomePrices[1]=X1;
-                            HomePrices[2]=X2;
-                            HomePrices[3]=X3;
-                            HomePrices[4]=X4;
-                            HomePrices[5]=X5;
-                            HomePrices[6]=X6;
-                            HomePrices[7]=X7;
-                            HomePrices[8]=X8;
-                            HomePrices[9]=X9;
-                            HomePrices[10]=X10;
-                            HomePrices[11]=X11;
-                            HomePrices[12]=X12;
-                            HomePrices[13]=X13;
-                            HomePrices[14]=X14;
-                            HomePrices[15]=X15;
-                            HomePrices[16]=X16;
-                            HomePrices[17]=X17;
-                            HomePrices[18]=X18;
-                            HomePrices[19]=X19;
-                            HomePrices[20]=X20;
-                            HomePrices[21]=X21;
-                            HomePrices[22]=X22;
-                            HomePrices[23]=X23;
-                        }
-                        else {
-                            AwayPrices[0]=X0;
-                            AwayPrices[1]=X1;
-                            AwayPrices[2]=X2;
-                            AwayPrices[3]=X3;
-                            AwayPrices[4]=X4;
-                            AwayPrices[5]=X5;
-                            AwayPrices[6]=X6;
-                            AwayPrices[7]=X7;
-                            AwayPrices[8]=X8;
-                            AwayPrices[9]=X9;
-                            AwayPrices[10]=X10;
-                            AwayPrices[11]=X11;
-                            AwayPrices[12]=X12;
-                            AwayPrices[13]=X13;
-                            AwayPrices[14]=X14;
-                            AwayPrices[15]=X15;
-                            AwayPrices[16]=X16;
-                            AwayPrices[17]=X17;
-                            AwayPrices[18]=X18;
-                            AwayPrices[19]=X19;
-                            AwayPrices[20]=X20;
-                            AwayPrices[21]=X21;
-                            AwayPrices[22]=X22;
-                            AwayPrices[23]=X23;
+                        Log.d(TAG, Integer.toString(response.optJSONArray("prices").length()));
+                        int AL = response.optJSONArray("prices").length();
+                        for(int j = 0; j<24; j++) {
+                            for (int i = 0; i <AL-1;  i++) {
+                                if (response.optJSONArray("prices").optJSONObject(i).optInt("item_id") == ItemIds[j]) {
+                                    if (X == true) {
+                                        HomePrices[j] = response.optJSONArray("prices").optJSONObject(i).optString("average_price");
+                                    } else {
+                                        AwayPrices[j] = response.optJSONArray("prices").optJSONObject(i).optString("average_price");
+                                    }
+                                }
+                            }
+                            if(X==true) {
+                                if (HomePrices[j] == "") {
+                                    HomePrices[j] = AvgPrices[j];
+                                }
+                            }else {
+                                if (AwayPrices[j] == "") {
+                                    AwayPrices[j] = AvgPrices[j];
+                                }
+                            }
                         }
 
-                    }
+//                        String X0 =response.optJSONArray("prices").optJSONObject(40).optString("average_price");
+//                        String X1 =response.optJSONArray("prices").optJSONObject(21).optString("average_price");
+//                        String X2 =response.optJSONArray("prices").optJSONObject(23).optString("average_price");
+//                        String X3 =response.optJSONArray("prices").optJSONObject(22).optString("average_price");
+//                        String X4 =response.optJSONArray("prices").optJSONObject(24).optString("average_price");
+//                        String X5 =response.optJSONArray("prices").optJSONObject(27).optString("average_price");
+//                        String X6 =response.optJSONArray("prices").optJSONObject(25).optString("average_price");
+//                        String X7 =response.optJSONArray("prices").optJSONObject(19).optString("average_price");
+//                        String X8 =response.optJSONArray("prices").optJSONObject(16).optString("average_price");
+//                        String X9 =response.optJSONArray("prices").optJSONObject(8).optString("average_price");
+//                        String X10 =response.optJSONArray("prices").optJSONObject(10).optString("average_price");
+//                        String X11 =response.optJSONArray("prices").optJSONObject(17).optString("average_price");
+//                        String X12 =response.optJSONArray("prices").optJSONObject(9).optString("average_price");
+//                        String X13 =response.optJSONArray("prices").optJSONObject(7).optString("average_price");
+//                        String X14 =response.optJSONArray("prices").optJSONObject(32).optString("average_price");
+//                        String X15 =response.optJSONArray("prices").optJSONObject(31).optString("average_price");
+//                        String X16 =response.optJSONArray("prices").optJSONObject(34).optString("average_price");
+//                        String X17 =response.optJSONArray("prices").optJSONObject(33).optString("average_price");
+//                        String X18 =response.optJSONArray("prices").optJSONObject(0).optString("average_price");
+//                        String X19 =response.optJSONArray("prices").optJSONObject(3).optString("average_price");
+//                        String X20 =response.optJSONArray("prices").optJSONObject(4).optString("average_price");
+//                        String X21 =response.optJSONArray("prices").optJSONObject(28).optString("average_price");
+//                        String X22 =response.optJSONArray("prices").optJSONObject(29).optString("average_price");
+//                        String X23 =response.optJSONArray("prices").optJSONObject(30).optString("average_price");
+
+//
+//                        if (X==true){
+//                            HomePrices[0]=X0;
+//                            HomePrices[1]=X1;
+//                            HomePrices[2]=X2;
+//                            HomePrices[3]=X3;
+//                            HomePrices[4]=X4;
+//                            HomePrices[5]=X5;
+//                            HomePrices[6]=X6;
+//                            HomePrices[7]=X7;
+//                            HomePrices[8]=X8;
+//                            HomePrices[9]=X9;
+//                            HomePrices[10]=X10;
+//                            HomePrices[11]=X11;
+//                            HomePrices[12]=X12;
+//                            HomePrices[13]=X13;
+//                            HomePrices[14]=X14;
+//                            HomePrices[15]=X15;
+//                            HomePrices[16]=X16;
+//                            HomePrices[17]=X17;
+//                            HomePrices[18]=X18;
+//                            HomePrices[19]=X19;
+//                            HomePrices[20]=X20;
+//                            HomePrices[21]=X21;
+//                            HomePrices[22]=X22;
+//                            HomePrices[23]=X23;
+                        }
+//                        else {
+//                            AwayPrices[0]=X0;
+//                            AwayPrices[1]=X1;
+//                            AwayPrices[2]=X2;
+//                            AwayPrices[3]=X3;
+//                            AwayPrices[4]=X4;
+//                            AwayPrices[5]=X5;
+//                            AwayPrices[6]=X6;
+//                            AwayPrices[7]=X7;
+//                            AwayPrices[8]=X8;
+//                            AwayPrices[9]=X9;
+//                            AwayPrices[10]=X10;
+//                            AwayPrices[11]=X11;
+//                            AwayPrices[12]=X12;
+//                            AwayPrices[13]=X13;
+//                            AwayPrices[14]=X14;
+//                            AwayPrices[15]=X15;
+//                            AwayPrices[16]=X16;
+//                            AwayPrices[17]=X17;
+//                            AwayPrices[18]=X18;
+//                            AwayPrices[19]=X19;
+//                            AwayPrices[20]=X20;
+//                            AwayPrices[21]=X21;
+//                            AwayPrices[22]=X22;
+//                            AwayPrices[23]=X23;
+//                        }
+//
+//                    }
                 },
                 new Response.ErrorListener() {
                     @Override
