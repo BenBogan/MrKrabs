@@ -40,10 +40,10 @@ public class EntertainmentInput extends Activity implements OnClickListener{
         String Fitness1= Fitness.getText().toString();
         String Other1= Other.getText().toString();
 
-        ((GlobalClass) this.getApplication()).setDiningOut(Diningout1);
+        ((GlobalClass) this.getApplication()).setDining(Diningout1);
         ((GlobalClass) this.getApplication()).setAlcohol(Alcohol1);
         ((GlobalClass) this.getApplication()).setFitness(Fitness1);
-        ((GlobalClass) this.getApplication()).setOther(Other1);
+        ((GlobalClass) this.getApplication()).setMisc(Other1);
 
 
         GoToResults();
