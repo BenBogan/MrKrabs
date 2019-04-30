@@ -72,6 +72,56 @@
         android:text=""
         android:background="#f0f070"
         android:textSize="20sp" />
+    <TextView
+        android:id="@+id/JSONResults6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults5"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/JSONResults7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults6"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/JSONResults8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults7"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/JSONResults9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults8"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/JSONResults10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/JSONResults9"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:background="#f0f070"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/Results1Button"
