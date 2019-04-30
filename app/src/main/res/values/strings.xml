@@ -35,6 +35,7 @@
     <string name="FitnessHint">Gym, Club Sports, etc.</string>
     <string name="EntertainmentText5">Miscellaneous Entertainment</string>
     <string name="OtherHint">$(USD)</string>
+    <string name="MiscHint">Cinema, Subscriptions etc.</string>
 
     <string name="Results1Text1">Results</string>
 

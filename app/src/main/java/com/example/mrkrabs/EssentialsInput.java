@@ -35,6 +35,7 @@ public class EssentialsInput extends Activity implements OnClickListener{
 
         Transportation.setAdapter(TransportAdapter);
 
+
         Grocery=findViewById(R.id.Grocery);
 
         Clothes = findViewById(R.id.Clothes);
