@@ -27,7 +27,7 @@ public class RentInput extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rent_input);
 
-        String[] LocationOptions = new String[]{"InCity", "Out of City"};
+        String[] LocationOptions = new String[]{"Select","InCity","Out of City"};
 
         ArrayAdapter<String> Location = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item, LocationOptions);

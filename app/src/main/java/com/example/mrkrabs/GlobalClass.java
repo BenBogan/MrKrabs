@@ -29,7 +29,6 @@ public class GlobalClass extends Application {
     private static String[] CurrentPrice = new String[24];
     private static String[] DestinationPrice = new String[24];
 
-
     public static String[] getCurrentPrice() { return CurrentPrice; }
 
     public static void setCurrentPrice(String[] currentPrice) { CurrentPrice = currentPrice; }

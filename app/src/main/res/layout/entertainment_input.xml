@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#0D3C60" >
+    android:background="#0D3C60">
 
     <TextView
         android:id="@+id/EntertainmentText1"
@@ -40,8 +40,11 @@
         android:ems="10"
         android:inputType="number"
         android:singleLine="true"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/Alcohol"
+        android:textColor="#ffffff"
         android:maxLength="6"/>
 
     <TextView
@@ -64,10 +67,13 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/Other"
+        android:textColor="#ffffff"
         android:maxLength="6"/>
 
     <TextView
@@ -91,9 +97,11 @@
         android:gravity="center"
         android:ems="10"
         android:hint="@string/FitnessHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
         android:imeOptions="actionNext"
+        android:textColor="#ffffff"
         android:nextFocusRight="@+id/Fitness"
         android:maxLength="6"/>
 
@@ -111,15 +119,17 @@
 
     <EditText
         android:id="@+id/Fitness"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/EntertainmentText5"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
-        android:hint="@string/OtherHint"
+        android:hint="@string/MiscHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
+        android:textColor="#ffffff"
         android:maxLength="6"/>
 
     <Button

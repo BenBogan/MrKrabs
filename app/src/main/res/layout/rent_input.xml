@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="#0D3C60" >
+    android:background="#0D3C60">
 
     <TextView
         android:id="@+id/RentText1"
@@ -41,6 +41,7 @@
         android:inputType="number"
         android:singleLine="true"
         android:imeOptions="actionNext"
+        android:textColor="#ffffff"
         android:nextFocusRight="@+id/Location"
         android:maxLength="1"/>
 
@@ -60,18 +61,18 @@
         android:id="@+id/Location"
         android:layout_below="@+id/RentText3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:completionThreshold="1"
         android:hint="@string/InOutHint"
         android:completionHint="In or Out of the City"
+        android:textAlignment="center"
         android:singleLine="true"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/RentInput"
-        android:background="@android:color/darker_gray"
-        android:spinnerMode="dropdown"
-        android:gravity="center"/>
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
 
     <TextView
         android:id="@+id/RentText4"
@@ -94,8 +95,11 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
+        android:textColor="#ffffff"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/Utilities"
         android:maxLength="6"/>
@@ -121,6 +125,9 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:textColor="#ffffff"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
         android:maxLength="6"/>
