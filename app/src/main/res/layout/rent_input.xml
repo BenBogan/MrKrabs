@@ -39,8 +39,11 @@
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:inputType="number"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:singleLine="true"
         android:imeOptions="actionNext"
+        android:textColor="#ffffff"
         android:nextFocusRight="@+id/Location"
         android:maxLength="1"/>
 
@@ -70,7 +73,7 @@
         android:singleLine="true"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/RentInput"
-        android:background="@android:color/transparent"
+        android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"/>
 
     <TextView
@@ -94,8 +97,11 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
+        android:textColor="#ffffff"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/Utilities"
         android:maxLength="6"/>
@@ -121,6 +127,9 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:textColor="#ffffff"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
         android:singleLine="true"
         android:maxLength="6"/>

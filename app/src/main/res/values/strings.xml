@@ -10,7 +10,7 @@
     <string name="GeneralText2">Current City:</string>
     <string name="CityListHint">Select a City</string>
     <string name="GeneralText3">Destination City:</string>
-    <string name="GeneralText4">Expected Salary:</string>
+    <string name="GeneralText4">Expected Annual Salary:</string>
 
     <string name="RentText1">Monthly Housing Cost</string>
     <string name="RentText2">Number of Bedrooms</string>
@@ -33,8 +33,8 @@
     <string name="EntertainmentText3">Alcohol</string>
     <string name="EntertainmentText4">Fitness</string>
     <string name="FitnessHint">Gym, Club Sports, etc.</string>
-    <string name="EntertainmentText5">Monthly Miscellaneous Costs</string>
-    <string name="OtherHint">Cinema, Subscriptions, etc. </string>
+    <string name="EntertainmentText5">Miscellaneous Entertainment</string>
+    <string name="OtherHint">$(USD)</string>
 
     <string name="Results1Text1">Results</string>
 

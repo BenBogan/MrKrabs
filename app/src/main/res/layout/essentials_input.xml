@@ -44,7 +44,7 @@
         android:singleLine="true"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/TransportationCost"
-        android:background="@android:color/darker_gray"
+        android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"/>
 
 
@@ -66,12 +66,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/EssentialsText3"
         android:layout_centerHorizontal="true"
-        android:hint="@string/GasolineHint"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:gravity="center"
         android:ems="10"
         android:inputType="number"
         android:singleLine="true"
         android:imeOptions="actionNext"
+        android:textColor="#ffffff"
         android:nextFocusRight="@+id/Grocery"
         android:maxLength="6"/>
 
@@ -96,7 +98,10 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
         android:inputType="number"
+        android:textColor="#ffffff"
         android:singleLine="true"
         android:imeOptions="actionNext"
         android:nextFocusRight="@+id/Clothes"
@@ -123,6 +128,9 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:ems="10"
+        android:hint="@string/OtherHint"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         android:inputType="number"
         android:singleLine="true"
         android:maxLength="6"/>
@@ -134,6 +142,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/Next"
+        android:textColor="#ffffff"
         android:background="@drawable/button_shape"
         android:textSize="21dp"/>
 
