@@ -47,6 +47,8 @@ public class Results1 extends Activity implements OnClickListener{
     private String[] AvgPrices = {"3057.24","1264.79","2061.65","995.2","1606.72","151.74","62.4","2.72","2.25","2.35","4.78","3.84","2.27","3.11","34.62","43.06","94.36","73.84","14","4","5.75","35.91","15.07","12"};
     private String[] HomePrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
     private String[] AwayPrices = {"","","","","","","","","","","","","","","","","","","","","","","",""};
+    float Data[] = new float[13];
+    private int[] Outputs = {0,0,0,0,0,0,0,0,0,0}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,6 +130,37 @@ public class Results1 extends Activity implements OnClickListener{
                 }
         );
         request.add(objectRequest);
+
+    }
+
+    private void CreateData(){
+        Data[0]=Float.parseFloat(((GlobalClass) this.getApplication()).getExpectedSalary())/12;
+        Data[1]=Float.parseFloat(((GlobalClass) this.getApplication()).getRentPerMonth());
+        if(((GlobalClass) this.getApplication()).getLocation()=="In City"){
+            Data[2]=0;
+        } else{
+            Data[2]=1;
+        }
+        Data[3]=Float.parseFloat(((GlobalClass) this.getApplication()).getBedrooms());
+        Data[4]=Float.parseFloat(((GlobalClass) this.getApplication()).getUtilities());
+        Data[5]=Float.parseFloat(((GlobalClass) this.getApplication()).getTransportationCost());
+        if(((GlobalClass) this.getApplication()).getTransportation()=="Private"){
+            Data[6]=0;
+        } else{
+            Data[6]=1;
+        }
+        Data[7]=Float.parseFloat(((GlobalClass) this.getApplication()).getGrocery());
+        Data[8]=Float.parseFloat(((GlobalClass) this.getApplication()).getClothes());
+        Data[9]=Float.parseFloat(((GlobalClass) this.getApplication()).getDining());
+        Data[10]=Float.parseFloat(((GlobalClass) this.getApplication()).getAlcohol());
+        Data[11]=Float.parseFloat(((GlobalClass) this.getApplication()).getFitness());
+        Data[12]=Float.parseFloat(((GlobalClass) this.getApplication()).getMisc());
+        for(int i=0;i<13;i++){
+            Log.d(TAG, Data[i].toString);
+        }
+    }
+    private void Calculations(String[] Inputs){
+        Float f= Float.parseFloat(String[0]);
 
     }
 }
