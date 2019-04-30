@@ -26,7 +26,7 @@ public class EssentialsInput extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.essentials_input);
 
-        String[] TransportOptions = new String[]{"Public", "Personal"};
+        String[] TransportOptions = new String[]{"Select","Public", "Personal"};
 
         ArrayAdapter<String> TransportAdapter = new ArrayAdapter<String>(this,
                 R.layout.dropdown_layout, TransportOptions);
