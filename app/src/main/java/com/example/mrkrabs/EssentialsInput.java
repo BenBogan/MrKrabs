@@ -31,7 +31,7 @@ public class EssentialsInput extends Activity implements OnClickListener{
         String[] TransportOptions = new String[]{"Select","Public", "Personal"};
 
         ArrayAdapter<String> TransportAdapter = new ArrayAdapter<String>(this,
-                R.layout.dropdown_layout, TransportOptions);
+                android.R.layout.simple_spinner_dropdown_item, TransportOptions);
 
         Transportation = findViewById(R.id.TransportList);
 

@@ -190,12 +190,12 @@ public class Results1 extends Activity implements OnClickListener{
         if(Inputs[2]==0){
             float AwayCityRent = ((AwayFloat[2]-AwayFloat[1])/2)*Inputs[3]+(AwayFloat[1])-((AwayFloat[2]-AwayFloat[1])/2);
             float HomeCityRent = ((HomeFloat[2]-HomeFloat[1])/2)*Inputs[3]+(HomeFloat[1])-((HomeFloat[2]-HomeFloat[1])/2);
-            Outputs[1]=Inputs[1]*AwayCityRent/HomeCityRent;
+            Outputs[1]=Inputs[1]*AwayCityRent/HomeCityRent/Inputs[3];
         }
         if(Inputs[2]==1){
             float AwayCityRent = ((AwayFloat[4]-AwayFloat[3])/4)*Inputs[3]+(AwayFloat[3])-((AwayFloat[4]-AwayFloat[3])/4);
             float HomeCityRent = ((HomeFloat[4]-HomeFloat[3])/4)*Inputs[3]+(HomeFloat[3])-((HomeFloat[4]-HomeFloat[3])/4);
-            Outputs[1]=Inputs[1]*AwayCityRent/HomeCityRent;
+            Outputs[1]=Inputs[1]*AwayCityRent/HomeCityRent/Inputs[3];
         }
         Outputs[2]=Inputs[4]*(AwayFloat[5]+AwayFloat[6])/(HomeFloat[5]+HomeFloat[6]);
         if(Inputs[6]==0){
