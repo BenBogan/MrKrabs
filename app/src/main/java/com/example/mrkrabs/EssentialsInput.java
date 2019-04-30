@@ -2,6 +2,7 @@ package com.example.mrkrabs;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class EssentialsInput extends Activity implements OnClickListener{
 
@@ -53,6 +55,13 @@ public class EssentialsInput extends Activity implements OnClickListener{
         String Clothes1 = Clothes.getText().toString();
         String TransportationCost1= TransportationCost.getText().toString();
         String Transportation1= Transportation.getSelectedItem().toString();
+
+        if ((Grocery1.equals(""))||(Clothes1.equals(""))||(TransportationCost1.equals(""))||(Transportation1.equals("Select"))) {
+            Toast DestinationError = Toast.makeText(EssentialsInput.this, "Please remember to enter a value for all fields, if not applicable enter 0", Toast.LENGTH_LONG);
+            DestinationError.setGravity(Gravity.CENTER, 0, -1500);
+            DestinationError.show();
+            return;
+        }
 
         ((GlobalClass) this.getApplication()).setGrocery(Grocery1);
         ((GlobalClass) this.getApplication()).setClothes(Clothes1);
