@@ -1,6 +1,7 @@
 package com.example.mrkrabs;
 
 import android.app.Activity;
+import android.view.Gravity;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListAdapter;
@@ -13,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RentInput extends Activity implements OnClickListener {
 
@@ -27,10 +29,10 @@ public class RentInput extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rent_input);
 
-        String[] LocationOptions = new String[]{"InCity", "Out of City"};
+        String[] LocationOptions = new String[]{"Select","InCity","Out of City"};
 
         ArrayAdapter<String> Location = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, LocationOptions);
+                android.R.layout.simple_spinner_dropdown_item, LocationOptions);
 
         Location1 = findViewById(R.id.Location);
         Location1.setAdapter(Location);
@@ -51,6 +53,13 @@ public class RentInput extends Activity implements OnClickListener {
         String Location = Location1.getSelectedItem().toString();
         String Rent= RentInput1.getText().toString();
         String Utilities= Utilities1.getText().toString();
+
+        if ((Bedrooms.equals(""))||(Location.equals("Select"))||(Rent.equals(""))||(Utilities.equals(""))) {
+            Toast DestinationError = Toast.makeText(RentInput.this, "Please remember to enter a value for all fields, if not applicable enter 0", Toast.LENGTH_LONG);
+            DestinationError.setGravity(Gravity.CENTER, 0, -1500);
+            DestinationError.show();
+            return;
+        }
 
         ((GlobalClass) this.getApplication()).setRentPerMonth(Rent);
         ((GlobalClass) this.getApplication()).setBedrooms(Bedrooms);
