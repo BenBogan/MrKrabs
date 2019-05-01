@@ -73,7 +73,7 @@ public class Results1 extends Activity implements OnClickListener{
         TestText8 = findViewById(R.id.JSONResults8);
         TestText9 = findViewById(R.id.JSONResults9);
         TestText10 = findViewById(R.id.JSONResults10);
-        JSONTestButton = findViewById(R.id.Results1Button);
+        JSONTestButton = findViewById(R.id.Results1Text1);
         JSONTestButton.setOnClickListener(this);
         String City1=((GlobalClass) this.getApplication()).getCurrentCity();
         String City2=((GlobalClass) this.getApplication()).getDestinationCity();
@@ -81,20 +81,6 @@ public class Results1 extends Activity implements OnClickListener{
         JSONreturnFunction(City2, false);
         ((GlobalClass) this.getApplication()).setCurrentPrice(HomePrices);
         ((GlobalClass) this.getApplication()).setDestinationPrice(AwayPrices);
-        CreateData();
-        Calculations(Data);
-        String HomePriceArray[] = ((GlobalClass) this.getApplication()).getCurrentPrice();
-        String AwayPriceArray[] = ((GlobalClass) this.getApplication()).getDestinationPrice();
-        TestText1.setText(StringOutputs[0]);
-        TestText2.setText(StringOutputs[1]);
-        TestText3.setText(StringOutputs[2]);
-        TestText4.setText(StringOutputs[3]);
-        TestText5.setText(StringOutputs[4]);
-        TestText6.setText(StringOutputs[5]);
-        TestText7.setText(StringOutputs[6]);
-        TestText8.setText(StringOutputs[7]);
-        TestText9.setText(StringOutputs[8]);
-        TestText10.setText(StringOutputs[9]);
     }
 
     public void onClick(View a){
@@ -150,7 +136,7 @@ public class Results1 extends Activity implements OnClickListener{
                             }
                         }
 
-                        }
+                    }
                 },
                 new Response.ErrorListener() {
                     @Override

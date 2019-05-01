@@ -19,9 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.mrkrabs.AllInputs"></activity>
-        <activity android:name="com.example.mrkrabs.RentInput"></activity>
-        <activity android:name="com.example.mrkrabs.EssentialsInput"></activity>
-        <activity android:name="com.example.mrkrabs.EntertainmentInput"></activity>
         <activity android:name="com.example.mrkrabs.Results1"></activity>
     </application>
 

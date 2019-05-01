@@ -11,16 +11,16 @@
     android:padding="10dp"
     android:background="#0D3C60" >
 
-    <TextView
-        android:id="@+id/Results1Text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/Results1Text1"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:background="#0D3C60"
-        android:textSize="30sp" />
+        <Button
+            android:id="@+id/Results1Text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="Calculate Results"
+            android:background="@drawable/button_shape"/>
+
         <TextView
             android:id="@+id/Center"
             android:layout_width="wrap_content"
@@ -47,7 +47,8 @@
         android:layout_below="@+id/Results1Text1"
 
 
-        android:text="Salary Difference vs City Average"
+        android:text="Salary vs City Average"
+            android:gravity="center"
         android:textColor="#ffffff"
         android:textSize="25sp"
         android:background="@drawable/prefilled_text"/>
@@ -71,8 +72,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_alignRight="@id/Center1"
-            android:layout_marginRight="10dp"
+
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             android:layout_below="@+id/JSONResults1"
 
@@ -344,16 +345,6 @@
         android:textColor="#ffffff"
         android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/Results1Button"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/JSONResults10"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="Test JSON"
-        android:background="@drawable/button_shape"
-        android:textSize="21dp"/>
 
     </RelativeLayout>
 </ScrollView>

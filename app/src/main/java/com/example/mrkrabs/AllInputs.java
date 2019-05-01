@@ -1,7 +1,10 @@
 package com.example.mrkrabs;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListAdapter;
@@ -61,13 +64,23 @@ public class AllInputs extends Activity implements OnClickListener{
 
         ExpectedSalary=findViewById(R.id.ExpectedSalary);
 //###############################################
-        String[] LocationOptions = new String[]{"Select","InCity","Out of City"};
+        String[] LocationOptions = new String[]{"Select","In City","Out of City"};
 
         ArrayAdapter<String> Location = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item, LocationOptions);
 
+
         Location1 = findViewById(R.id.Location);
         Location1.setAdapter(Location);
+        Location1.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                InputMethodManager imm=(InputMethodManager)getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(Bedrooms1.getWindowToken(), 0);
+                return false;
+            }
+        }) ;
 
         Bedrooms1 = findViewById(R.id.Bedrooms);
 
@@ -83,7 +96,15 @@ public class AllInputs extends Activity implements OnClickListener{
         Transportation = findViewById(R.id.TransportList);
 
         Transportation.setAdapter(TransportAdapter);
+        Transportation.setOnTouchListener(new View.OnTouchListener() {
 
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                InputMethodManager imm=(InputMethodManager)getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(Utilities1.getWindowToken(), 0);
+                return false;
+            }
+        }) ;
 
         Grocery=findViewById(R.id.Grocery);
 
