@@ -81,6 +81,20 @@ public class Results1 extends Activity implements OnClickListener{
         JSONreturnFunction(City2, false);
         ((GlobalClass) this.getApplication()).setCurrentPrice(HomePrices);
         ((GlobalClass) this.getApplication()).setDestinationPrice(AwayPrices);
+        CreateData();
+        Calculations(Data);
+        String HomePriceArray[] = ((GlobalClass) this.getApplication()).getCurrentPrice();
+        String AwayPriceArray[] = ((GlobalClass) this.getApplication()).getDestinationPrice();
+        TestText1.setText(StringOutputs[0]);
+        TestText2.setText(StringOutputs[1]);
+        TestText3.setText(StringOutputs[2]);
+        TestText4.setText(StringOutputs[3]);
+        TestText5.setText(StringOutputs[4]);
+        TestText6.setText(StringOutputs[5]);
+        TestText7.setText(StringOutputs[6]);
+        TestText8.setText(StringOutputs[7]);
+        TestText9.setText(StringOutputs[8]);
+        TestText10.setText(StringOutputs[9]);
     }
 
     public void onClick(View a){

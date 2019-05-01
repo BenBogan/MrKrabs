@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#0D3C60">
+        <TextView
+            android:id="@+id/GeneralText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/GeneralText1"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#0D3C60"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/GeneralText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/GeneralText1"
+            android:text="@string/GeneralText2"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/cities_list1"
+            android:layout_below="@+id/GeneralText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:completionThreshold="1"
+            android:completionHint="Select a City"
+            android:hint="@string/CityListHint"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/cities_list2"/>
+
+        <TextView
+            android:id="@+id/GeneralText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cities_list1"
+            android:text="@string/GeneralText3"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/cities_list2"
+            android:layout_below="@+id/GeneralText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:completionThreshold="1"
+            android:hint="@string/CityListHint"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:completionHint="Select a City"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/ExpectedSalary"/>
+
+        <TextView
+            android:id="@+id/GeneralText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cities_list2"
+            android:text="@string/GeneralText4"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ExpectedSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GeneralText4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:textColor="#ffffff"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="6"/>
+//#######################################################
+        <TextView
+            android:layout_below="@+id/ExpectedSalary"
+            android:layout_marginTop="30dp"
+            android:id="@+id/RentText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/RentText1"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#0D3C60"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/RentText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/RentText1"
+            android:text="@string/RentText2"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Bedrooms"
+            android:layout_below="@+id/RentText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColor="#ffffff"
+            android:nextFocusRight="@+id/Location"
+            android:maxLength="1"/>
+
+        <TextView
+            android:id="@+id/RentText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Bedrooms"
+            android:text="@string/RentText3"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/Location"
+            android:layout_below="@+id/RentText3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:completionThreshold="1"
+            android:hint="@string/InOutHint"
+            android:completionHint="In or Out of the City"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/RentInput"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/RentText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Location"
+            android:text="@string/RentText4"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/RentInput"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RentText4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/Utilities"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/RentText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/RentInput"
+            android:text="@string/RentText5"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Utilities"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RentText5"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:textColor="#ffffff"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="6"/>
+
+
+        <TextView
+            android:layout_below="@+id/Utilities"
+            android:layout_marginTop="30dp"
+            android:id="@+id/EssentialsText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/EssentialsText1"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#0D3C60"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/EssentialsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EssentialsText1"
+            android:text="@string/EssentialsText2"
+            android:textColor="#ffffff"
+            android:background="@drawable/prefilled_text"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/TransportList"
+            android:layout_below="@+id/EssentialsText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:completionThreshold="1"
+            android:prompt="@string/PersonalPublicHint"
+            android:completionHint="Public Transportation or Auto Costs"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/TransportationCost"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+
+        <TextView
+            android:id="@+id/EssentialsText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TransportList"
+            android:text="@string/EssentialsText3"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/TransportationCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EssentialsText3"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/GasolineHint"
+            android:textColorHint="#ffffff"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColor="#ffffff"
+            android:nextFocusRight="@+id/Grocery"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/EssentialsText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TransportationCost"
+            android:text="@string/EssentialsText4"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Grocery"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EssentialsText4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/Clothes"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/EssentialsText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Grocery"
+            android:text="@string/EssentialsText5"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Clothes"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EssentialsText5"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="6"/>
+
+        //#################################
+
+
+        <TextView
+            android:layout_below="@+id/Clothes"
+            android:layout_marginTop="30dp"
+            android:id="@+id/EntertainmentText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/EntertainmentText1"
+            android:background="#0D3C60"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="29sp" />
+
+        <TextView
+            android:id="@+id/EntertainmentText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EntertainmentText1"
+            android:text="@string/EntertainmentText2"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/DiningOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EntertainmentText2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/Alcohol"
+            android:textColor="#ffffff"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/EntertainmentText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/DiningOut"
+            android:text="@string/EntertainmentText3"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EntertainmentText3"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/OtherHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusRight="@+id/Other"
+            android:textColor="#ffffff"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/EntertainmentText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Alcohol"
+            android:text="@string/EntertainmentText4"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EntertainmentText4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/FitnessHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColor="#ffffff"
+            android:nextFocusRight="@+id/Fitness"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/EntertainmentText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Fitness"
+            android:text="@string/EntertainmentText5"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/prefilled_text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EntertainmentText5"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:ems="10"
+            android:hint="@string/MiscHint"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:maxLength="6"/>
+
+        <Button
+            android:layout_below="@+id/Other"
+            android:id="@+id/EntertainmentButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Next"
+            android:background="@drawable/button_shape"
+            android:textSize="21dp"
+            android:layout_marginTop="30dp"/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
