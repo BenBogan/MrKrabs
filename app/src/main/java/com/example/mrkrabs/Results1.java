@@ -154,9 +154,7 @@ public class Results1 extends Activity implements OnClickListener{
                 }
         );
         request.add(objectRequest);
-        while ( HomePrices[0]=="") {
-            try { Thread.sleep(50); } catch (Exception e) {}
-        }
+        try { Thread.sleep(5000); } catch (Exception e) {}
     }
 
     private void CreateData(){
