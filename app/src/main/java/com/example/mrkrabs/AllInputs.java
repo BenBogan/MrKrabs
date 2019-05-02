@@ -7,22 +7,19 @@ import android.view.MotionEvent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.ListAdapter;
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.Arrays;
+//These are the Imports
 
-import static android.content.ContentValues.TAG;
-
+//The AllInputs screen is a scrolling screen of user inputs.
+// The users expenses are collected here to be used as data for cost of living calculations
 public class AllInputs extends Activity implements OnClickListener{
 
 
@@ -42,8 +39,9 @@ public class AllInputs extends Activity implements OnClickListener{
     private EditText Alcohol;
     private EditText Fitness;
     private EditText Other;
+//These are all of the text and spinner inputs used to collect expense data
 
-
+    //All of the widgets above must be initialized onCreate.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

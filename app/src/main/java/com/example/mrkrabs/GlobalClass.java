@@ -1,9 +1,7 @@
 package com.example.mrkrabs;
 
 import android.app.Application;
-import android.widget.EditText;
-
-import org.json.JSONArray;
+//These are the Imports
 
 public class GlobalClass extends Application {
     private String CurrentCity;
@@ -25,17 +23,6 @@ public class GlobalClass extends Application {
     private String Misc;
     private String Dining;
     private String Alcohol;
-
-    private static String[] CurrentPrice = new String[24];
-    private static String[] DestinationPrice = new String[24];
-
-    public static String[] getCurrentPrice() { return CurrentPrice; }
-
-    public static void setCurrentPrice(String[] currentPrice) { CurrentPrice = currentPrice; }
-
-    public static String[] getDestinationPrice() { return DestinationPrice; }
-
-    public static void setDestinationPrice(String[] destinationPrice) { DestinationPrice = destinationPrice; }
 
     public String getMisc() { return Misc; }
 

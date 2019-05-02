@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
@@ -28,6 +27,7 @@
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/Results1Text1"/>
+
         <TextView
             android:id="@+id/Center1"
             android:layout_width="wrap_content"
@@ -37,32 +37,53 @@
             android:layout_marginRight="-30dp"/>
 
         <TextView
+            android:id="@+id/JSONTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/Center1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Results1Text1"
+            android:text="YourSalary"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="@drawable/prefilled_text"/>
+        <TextView
         android:id="@+id/JSONTitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_alignRight="@id/Center1"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/Results1Text1"
-
-
-        android:text="Salary vs City Average"
-            android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/JSONTitle"
+        android:text="City Average"
+        android:gravity="center"
         android:textColor="#ffffff"
         android:textSize="25sp"
         android:background="@drawable/prefilled_text"/>
 
         <TextView
+            android:id="@+id/JSONResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@id/JSONTitle"
+            android:layout_alignLeft="@id/Center1"
+            android:layout_marginLeft="10dp"
+
+            android:text=""
+            android:background="#0D3C60"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+        <TextView
         android:id="@+id/JSONResults1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_alignTop="@id/JSONTitle1"
         android:layout_below="@+id/Results1Text1"
         android:layout_alignLeft="@id/Center1"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
-
         android:text=""
         android:background="#0D3C60"
         android:textColor="#ffffff"
