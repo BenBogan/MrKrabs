@@ -67,8 +67,9 @@
         android:background="#0D3C60"
         android:textColor="#ffffff"
         android:textSize="25sp" />
+
         <TextView
-            android:id="@+id/JSONResults1.5"
+            android:id="@+id/JSONResults12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -77,7 +78,7 @@
             android:layout_marginTop="30dp"
             android:layout_below="@+id/JSONResults1"
 
-            android:text="Equivalent Costs"
+            android:text="Costs"
             android:textColor="#ffffff"
             android:textSize="25sp"
             android:background="@drawable/prefilled_text"/>
@@ -90,7 +91,7 @@
         android:layout_alignRight="@id/Center1"
         android:layout_marginRight="10dp"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/JSONResults1.5"
+        android:layout_below="@+id/JSONResults12"
 
         android:text="Rent:"
         android:textColor="#ffffff"
@@ -102,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_below="@+id/JSONResults1.5"
+        android:layout_below="@+id/JSONResults12"
         android:layout_alignLeft="@id/Center1"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
