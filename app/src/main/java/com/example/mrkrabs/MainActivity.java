@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements OnClickListener{
     }
 
     private void GoToGeneral(){
-        Intent GeneralShift = new Intent(MainActivity.this, GeneralInput.class);
+        Intent GeneralShift = new Intent(MainActivity.this, AllInputs.class);
         startActivity(GeneralShift);
     }
 }
