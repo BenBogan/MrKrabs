@@ -21,7 +21,7 @@ import static android.content.ContentValues.TAG;
 //These are the Imports
 
 public class Results1 extends Activity implements OnClickListener{
-
+    //These are all the Textboxes and Strings required for
     private Button JSONTestButton;
     private TextView TestText0;
     private TextView TestText1;
